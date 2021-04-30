@@ -1,0 +1,3239 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b9a8d04be74b4fd79d3d9cb113205dde {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b9a8d04be74b4fd79d3d9cb113205dde" ></div>
+        
+</body>
+<script>    
+    
+            var map_b9a8d04be74b4fd79d3d9cb113205dde = L.map(
+                "map_b9a8d04be74b4fd79d3d9cb113205dde",
+                {
+                    center: [41.8755616, -87.6244212],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f77cf02da57945da9cef0a9e17af78b0 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+            var tile_layer_7dbf56035e5c49258a5fc18e26986544 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+            var circle_marker_ac8e13e705e24921a2a34d4615d06ab4 = L.circleMarker(
+                [41.9683269, -87.7280279],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_b452b53b13f04d2795017940f65c9256 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b705364ba244ac584a883b9896db288 = $(`<div id="html_7b705364ba244ac584a883b9896db288" style="width: 100.0%; height: 100.0%;">Albany Park, Rent $1210, Cluster 3</div>`)[0];
+            popup_b452b53b13f04d2795017940f65c9256.setContent(html_7b705364ba244ac584a883b9896db288);
+        
+
+        circle_marker_ac8e13e705e24921a2a34d4615d06ab4.bindPopup(popup_b452b53b13f04d2795017940f65c9256)
+        ;
+
+        
+    
+    
+            var circle_marker_4506046b202945b796a46969e5888e11 = L.circleMarker(
+                [41.9816581, -87.6684762],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_45f4952555d5460682de14d092656e4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41165fb5f3fa4f698dcc6d16daf2955b = $(`<div id="html_41165fb5f3fa4f698dcc6d16daf2955b" style="width: 100.0%; height: 100.0%;">Andersonville, Rent $1229, Cluster 3</div>`)[0];
+            popup_45f4952555d5460682de14d092656e4a.setContent(html_41165fb5f3fa4f698dcc6d16daf2955b);
+        
+
+        circle_marker_4506046b202945b796a46969e5888e11.bindPopup(popup_45f4952555d5460682de14d092656e4a)
+        ;
+
+        
+    
+    
+            var circle_marker_727d57c83b1248cbaa5dadff791a02e5 = L.circleMarker(
+                [41.8407554, -87.63401859999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_19fc462f5f0946a49a6d35dcf5037808 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6be57379041c4c089d12347c5e3d74b4 = $(`<div id="html_6be57379041c4c089d12347c5e3d74b4" style="width: 100.0%; height: 100.0%;">Armour Square, Rent $1437, Cluster 3</div>`)[0];
+            popup_19fc462f5f0946a49a6d35dcf5037808.setContent(html_6be57379041c4c089d12347c5e3d74b4);
+        
+
+        circle_marker_727d57c83b1248cbaa5dadff791a02e5.bindPopup(popup_19fc462f5f0946a49a6d35dcf5037808)
+        ;
+
+        
+    
+    
+            var circle_marker_44ae7f59a4a04eb29d3bcfc567456e3c = L.circleMarker(
+                [41.7442016, -87.58557569999999],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_03f6334f53f74461a94e4b15d3df1c2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e04d7c5dbce241f181735a814a36d7fd = $(`<div id="html_e04d7c5dbce241f181735a814a36d7fd" style="width: 100.0%; height: 100.0%;">Avalon Park, Rent $782, Cluster 0</div>`)[0];
+            popup_03f6334f53f74461a94e4b15d3df1c2e.setContent(html_e04d7c5dbce241f181735a814a36d7fd);
+        
+
+        circle_marker_44ae7f59a4a04eb29d3bcfc567456e3c.bindPopup(popup_03f6334f53f74461a94e4b15d3df1c2e)
+        ;
+
+        
+    
+    
+            var circle_marker_fab3db6e89e84ecd823bfab25fc10ef0 = L.circleMarker(
+                [41.9415011, -87.70250209999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_34e88339fb2747789dd846d431a8bc3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_665d0d0ac9914ce987fb9237588d8d9e = $(`<div id="html_665d0d0ac9914ce987fb9237588d8d9e" style="width: 100.0%; height: 100.0%;">Polish Village, Rent $1102, Cluster 3</div>`)[0];
+            popup_34e88339fb2747789dd846d431a8bc3e.setContent(html_665d0d0ac9914ce987fb9237588d8d9e);
+        
+
+        circle_marker_fab3db6e89e84ecd823bfab25fc10ef0.bindPopup(popup_34e88339fb2747789dd846d431a8bc3e)
+        ;
+
+        
+    
+    
+            var circle_marker_2f4922b27f3c4f7f9f28715376f515da = L.circleMarker(
+                [41.8066775, -87.6679765],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_fc1a9493e63b4621beac5134b13a34fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae7f1a5e2de9416c9d50db8d0873c1c8 = $(`<div id="html_ae7f1a5e2de9416c9d50db8d0873c1c8" style="width: 100.0%; height: 100.0%;">Back of the Yards, Rent $1200, Cluster 3</div>`)[0];
+            popup_fc1a9493e63b4621beac5134b13a34fc.setContent(html_ae7f1a5e2de9416c9d50db8d0873c1c8);
+        
+
+        circle_marker_2f4922b27f3c4f7f9f28715376f515da.bindPopup(popup_fc1a9493e63b4621beac5134b13a34fc)
+        ;
+
+        
+    
+    
+            var circle_marker_5a2950dbe5024b11a8611292ac5b7ce0 = L.circleMarker(
+                [41.9274631, -87.7783025],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_b877420ffcee49bb823d164374ca0adb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c838b952c864a0e86ce80d4a05bea6e = $(`<div id="html_5c838b952c864a0e86ce80d4a05bea6e" style="width: 100.0%; height: 100.0%;">Belmont Central, Rent $1780, Cluster 6</div>`)[0];
+            popup_b877420ffcee49bb823d164374ca0adb.setContent(html_5c838b952c864a0e86ce80d4a05bea6e);
+        
+
+        circle_marker_5a2950dbe5024b11a8611292ac5b7ce0.bindPopup(popup_b877420ffcee49bb823d164374ca0adb)
+        ;
+
+        
+    
+    
+            var circle_marker_65af4d5dfab0469991d26f231ace5e69 = L.circleMarker(
+                [41.9316982, -87.7343478],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_98694b8b08d947a28bd5588c0c613f55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23efa536c5504d53a4a6d786cf8ab78e = $(`<div id="html_23efa536c5504d53a4a6d786cf8ab78e" style="width: 100.0%; height: 100.0%;">Belmont Gardens, Rent $1942, Cluster 6</div>`)[0];
+            popup_98694b8b08d947a28bd5588c0c613f55.setContent(html_23efa536c5504d53a4a6d786cf8ab78e);
+        
+
+        circle_marker_65af4d5dfab0469991d26f231ace5e69.bindPopup(popup_98694b8b08d947a28bd5588c0c613f55)
+        ;
+
+        
+    
+    
+            var circle_marker_897c071e078f46e4873f8a757b618a80 = L.circleMarker(
+                [41.9451265, -87.8143316],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_1e47603632b44bc1b205f8e607e3a919 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a226d4b43df4a2bb48a57dbd16dcaf7 = $(`<div id="html_0a226d4b43df4a2bb48a57dbd16dcaf7" style="width: 100.0%; height: 100.0%;">Belmont Heights, Rent $1675, Cluster 6</div>`)[0];
+            popup_1e47603632b44bc1b205f8e607e3a919.setContent(html_0a226d4b43df4a2bb48a57dbd16dcaf7);
+        
+
+        circle_marker_897c071e078f46e4873f8a757b618a80.bindPopup(popup_1e47603632b44bc1b205f8e607e3a919)
+        ;
+
+        
+    
+    
+            var circle_marker_80b123b665274646ad7de100e7ef2456 = L.circleMarker(
+                [41.9414218, -87.83287120000001],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_c3f1e5c91cda4cd5b162670fed41fb5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3d1a89cff2e4915a7d2ea7a126df465 = $(`<div id="html_d3d1a89cff2e4915a7d2ea7a126df465" style="width: 100.0%; height: 100.0%;">Belmont Terrace, Rent $1675, Cluster 6</div>`)[0];
+            popup_c3f1e5c91cda4cd5b162670fed41fb5b.setContent(html_d3d1a89cff2e4915a7d2ea7a126df465);
+        
+
+        circle_marker_80b123b665274646ad7de100e7ef2456.bindPopup(popup_c3f1e5c91cda4cd5b162670fed41fb5b)
+        ;
+
+        
+    
+    
+            var circle_marker_1104e431064c4f289facbd899a3c91ac = L.circleMarker(
+                [41.6809765, -87.6831485],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6ce89081f33144b58d8b67ec4f733041 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6383ca915a5645b0a4407e5b5b7c0147 = $(`<div id="html_6383ca915a5645b0a4407e5b5b7c0147" style="width: 100.0%; height: 100.0%;">Beverly Woods, Rent $1317, Cluster 3</div>`)[0];
+            popup_6ce89081f33144b58d8b67ec4f733041.setContent(html_6383ca915a5645b0a4407e5b5b7c0147);
+        
+
+        circle_marker_1104e431064c4f289facbd899a3c91ac.bindPopup(popup_6ce89081f33144b58d8b67ec4f733041)
+        ;
+
+        
+    
+    
+            var circle_marker_7ea6950543b849268f205606f6c0be57 = L.circleMarker(
+                [41.9721668, -87.7986628],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6fc6d44e50b74caf8cfa40cc977e10e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38d3c2754e524f4d811c4e61f08fa19a = $(`<div id="html_38d3c2754e524f4d811c4e61f08fa19a" style="width: 100.0%; height: 100.0%;">Big Oaks, Rent $1331, Cluster 3</div>`)[0];
+            popup_6fc6d44e50b74caf8cfa40cc977e10e5.setContent(html_38d3c2754e524f4d811c4e61f08fa19a);
+        
+
+        circle_marker_7ea6950543b849268f205606f6c0be57.bindPopup(popup_6fc6d44e50b74caf8cfa40cc977e10e5)
+        ;
+
+        
+    
+    
+            var circle_marker_d4ea58143a4d4ec387a7e774482e6c5d = L.circleMarker(
+                [41.9780271, -87.6789573],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_9453aff8c6b04774a00d7f136e2f279e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0156fe2f5ddf4f3091eec161540567a5 = $(`<div id="html_0156fe2f5ddf4f3091eec161540567a5" style="width: 100.0%; height: 100.0%;">Bowmanville, Rent $1239, Cluster 3</div>`)[0];
+            popup_9453aff8c6b04774a00d7f136e2f279e.setContent(html_0156fe2f5ddf4f3091eec161540567a5);
+        
+
+        circle_marker_d4ea58143a4d4ec387a7e774482e6c5d.bindPopup(popup_9453aff8c6b04774a00d7f136e2f279e)
+        ;
+
+        
+    
+    
+            var circle_marker_f92a688c517c441d9b33f9b839bd1614 = L.circleMarker(
+                [41.8364162, -87.6486609],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_28a6db9d0d56495298b1326bf2de3bbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_169f9ab3ddb64c3a9511d8416d49f5a7 = $(`<div id="html_169f9ab3ddb64c3a9511d8416d49f5a7" style="width: 100.0%; height: 100.0%;">Bridgeport, Rent $1407, Cluster 3</div>`)[0];
+            popup_28a6db9d0d56495298b1326bf2de3bbe.setContent(html_169f9ab3ddb64c3a9511d8416d49f5a7);
+        
+
+        circle_marker_f92a688c517c441d9b33f9b839bd1614.bindPopup(popup_28a6db9d0d56495298b1326bf2de3bbe)
+        ;
+
+        
+    
+    
+            var circle_marker_ad75003c22a7498c9ebf949f15670656 = L.circleMarker(
+                [41.8166444, -87.6167744],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_ebe5a59a01b54f1f95a2b6960f7fda0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62cf06d918db419695e51b2b77b1f25d = $(`<div id="html_62cf06d918db419695e51b2b77b1f25d" style="width: 100.0%; height: 100.0%;">Bronzeville, Rent $1493, Cluster 1</div>`)[0];
+            popup_ebe5a59a01b54f1f95a2b6960f7fda0a.setContent(html_62cf06d918db419695e51b2b77b1f25d);
+        
+
+        circle_marker_ad75003c22a7498c9ebf949f15670656.bindPopup(popup_ebe5a59a01b54f1f95a2b6960f7fda0a)
+        ;
+
+        
+    
+    
+            var circle_marker_0f4891c73dde4bd9acf5d6789f2bdb2c = L.circleMarker(
+                [41.9227067, -87.68027479999999],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_0ff9b4e1e5f145b6863e2909a9b83eff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd75ef3a5807457597200cd85a0e614e = $(`<div id="html_dd75ef3a5807457597200cd85a0e614e" style="width: 100.0%; height: 100.0%;">Bucktown, Rent $1921, Cluster 6</div>`)[0];
+            popup_0ff9b4e1e5f145b6863e2909a9b83eff.setContent(html_dd75ef3a5807457597200cd85a0e614e);
+        
+
+        circle_marker_0f4891c73dde4bd9acf5d6789f2bdb2c.bindPopup(popup_0ff9b4e1e5f145b6863e2909a9b83eff)
+        ;
+
+        
+    
+    
+            var circle_marker_e6e50498d4824000ad356a381a5ed057 = L.circleMarker(
+                [41.9795048, -87.6966206],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_ff9b471bdb4a4989ad515b954faba528 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c496bf64836249e5888a3db4b9c3f96e = $(`<div id="html_c496bf64836249e5888a3db4b9c3f96e" style="width: 100.0%; height: 100.0%;">Budlong Woods, Rent $1210, Cluster 3</div>`)[0];
+            popup_ff9b471bdb4a4989ad515b954faba528.setContent(html_c496bf64836249e5888a3db4b9c3f96e);
+        
+
+        circle_marker_e6e50498d4824000ad356a381a5ed057.bindPopup(popup_ff9b471bdb4a4989ad515b954faba528)
+        ;
+
+        
+    
+    
+            var circle_marker_85b165e78a2d4d00b713595582f8ff12 = L.circleMarker(
+                [41.95767559999999, -87.650714],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_4a45a037190342c0812f89c422c6de35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8509193bf744ffaa943c74cf4651c4e = $(`<div id="html_b8509193bf744ffaa943c74cf4651c4e" style="width: 100.0%; height: 100.0%;">Buena Park, Rent $1450, Cluster 3</div>`)[0];
+            popup_4a45a037190342c0812f89c422c6de35.setContent(html_b8509193bf744ffaa943c74cf4651c4e);
+        
+
+        circle_marker_85b165e78a2d4d00b713595582f8ff12.bindPopup(popup_4a45a037190342c0812f89c422c6de35)
+        ;
+
+        
+    
+    
+            var circle_marker_10606692bd154b48a1ee73840c838e8a = L.circleMarker(
+                [41.7281304, -87.5964182],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_7183cbdf366a410781f8e7858403e556 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a729b647f99c4d66b866bd69cb0d17cb = $(`<div id="html_a729b647f99c4d66b866bd69cb0d17cb" style="width: 100.0%; height: 100.0%;">Burnside, Rent $782, Cluster 0</div>`)[0];
+            popup_7183cbdf366a410781f8e7858403e556.setContent(html_a729b647f99c4d66b866bd69cb0d17cb);
+        
+
+        circle_marker_10606692bd154b48a1ee73840c838e8a.bindPopup(popup_7183cbdf366a410781f8e7858403e556)
+        ;
+
+        
+    
+    
+            var circle_marker_28ff0958465344788dafdad9d23a7e7d = L.circleMarker(
+                [41.9010905, -87.64146360000001],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_7dd9f628821c4b76820028f199c05f9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_666b3edf3f2d48ab8cd6903c7aab7988 = $(`<div id="html_666b3edf3f2d48ab8cd6903c7aab7988" style="width: 100.0%; height: 100.0%;">Cabrini–Green, Rent $2118, Cluster 2</div>`)[0];
+            popup_7dd9f628821c4b76820028f199c05f9d.setContent(html_666b3edf3f2d48ab8cd6903c7aab7988);
+        
+
+        circle_marker_28ff0958465344788dafdad9d23a7e7d.bindPopup(popup_7dd9f628821c4b76820028f199c05f9d)
+        ;
+
+        
+    
+    
+            var circle_marker_be224d64c318464fbb8a2d89af11ad38 = L.circleMarker(
+                [41.7298307, -87.57047639999999],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_c6804ee32cf5453eaab4deb048fe49fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_523d5eb9be4d434681938c444a29cf66 = $(`<div id="html_523d5eb9be4d434681938c444a29cf66" style="width: 100.0%; height: 100.0%;">Calumet Heights, Rent $782, Cluster 0</div>`)[0];
+            popup_c6804ee32cf5453eaab4deb048fe49fc.setContent(html_523d5eb9be4d434681938c444a29cf66);
+        
+
+        circle_marker_be224d64c318464fbb8a2d89af11ad38.bindPopup(popup_c6804ee32cf5453eaab4deb048fe49fc)
+        ;
+
+        
+    
+    
+            var circle_marker_9c5591a4ec344cdbb2889cb39ad8c041 = L.circleMarker(
+                [41.8135786, -87.6408469],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_d1b3fae16b3a4d9ea1c6ee33b421a45d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10d8c752d9274209bb1c927e06e0b974 = $(`<div id="html_10d8c752d9274209bb1c927e06e0b974" style="width: 100.0%; height: 100.0%;">Canaryville, Rent $1200, Cluster 3</div>`)[0];
+            popup_d1b3fae16b3a4d9ea1c6ee33b421a45d.setContent(html_10d8c752d9274209bb1c927e06e0b974);
+        
+
+        circle_marker_9c5591a4ec344cdbb2889cb39ad8c041.bindPopup(popup_d1b3fae16b3a4d9ea1c6ee33b421a45d)
+        ;
+
+        
+    
+    
+            var circle_marker_60bbde279881411fbb18420295a2296b = L.circleMarker(
+                [41.8646077, -87.62153819999999],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_bf819b0e2cf0424680621f09f25cc3c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72274b300d224659a6fce032117d53ab = $(`<div id="html_72274b300d224659a6fce032117d53ab" style="width: 100.0%; height: 100.0%;">Central Station, Rent $2065, Cluster 2</div>`)[0];
+            popup_bf819b0e2cf0424680621f09f25cc3c0.setContent(html_72274b300d224659a6fce032117d53ab);
+        
+
+        circle_marker_60bbde279881411fbb18420295a2296b.bindPopup(popup_bf819b0e2cf0424680621f09f25cc3c0)
+        ;
+
+        
+    
+    
+            var circle_marker_4ca7d7576aef430b9c1b46e3df15cce4 = L.circleMarker(
+                [41.7718392, -87.6931785],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_f387b6ab1e864a64974e6bb3ddc77c39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed579458ee6c438fa3be2d895334cd8e = $(`<div id="html_ed579458ee6c438fa3be2d895334cd8e" style="width: 100.0%; height: 100.0%;">Chicago Lawn, Rent $1874, Cluster 6</div>`)[0];
+            popup_f387b6ab1e864a64974e6bb3ddc77c39.setContent(html_ed579458ee6c438fa3be2d895334cd8e);
+        
+
+        circle_marker_4ca7d7576aef430b9c1b46e3df15cce4.bindPopup(popup_f387b6ab1e864a64974e6bb3ddc77c39)
+        ;
+
+        
+    
+    
+            var circle_marker_394d67314de14b7585793bf9dd7c8f4d = L.circleMarker(
+                [41.850691, -87.63404899999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_712ffe2689b34663bd79459f9aa4b74f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_994f1893361b479c8fba11d472b920dc = $(`<div id="html_994f1893361b479c8fba11d472b920dc" style="width: 100.0%; height: 100.0%;">Chinatown, Rent $1437, Cluster 3</div>`)[0];
+            popup_712ffe2689b34663bd79459f9aa4b74f.setContent(html_994f1893361b479c8fba11d472b920dc);
+        
+
+        circle_marker_394d67314de14b7585793bf9dd7c8f4d.bindPopup(popup_712ffe2689b34663bd79459f9aa4b74f)
+        ;
+
+        
+    
+    
+            var circle_marker_9ea1224722ee46bca7bf6d87dd90ba9f = L.circleMarker(
+                [41.9633603, -87.6486024],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_38dd11bdd4f34c6c928dd7af1b74d4f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54bdd62243c642b7aa4fe6da899a7d36 = $(`<div id="html_54bdd62243c642b7aa4fe6da899a7d36" style="width: 100.0%; height: 100.0%;">Clarendon Park, Rent $1329, Cluster 3</div>`)[0];
+            popup_38dd11bdd4f34c6c928dd7af1b74d4f1.setContent(html_54bdd62243c642b7aa4fe6da899a7d36);
+        
+
+        circle_marker_9ea1224722ee46bca7bf6d87dd90ba9f.bindPopup(popup_38dd11bdd4f34c6c928dd7af1b74d4f1)
+        ;
+
+        
+    
+    
+            var circle_marker_4341ba9bdbf9402e8b0673e1d39e59d6 = L.circleMarker(
+                [41.718128, -87.5964313],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_60c746c7a0c34273b07e84bbf6f6a416 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56a47f27ee6245aeb44ee5a4aaf0b7a0 = $(`<div id="html_56a47f27ee6245aeb44ee5a4aaf0b7a0" style="width: 100.0%; height: 100.0%;">Cottage Grove Heights, Rent $891, Cluster 0</div>`)[0];
+            popup_60c746c7a0c34273b07e84bbf6f6a416.setContent(html_56a47f27ee6245aeb44ee5a4aaf0b7a0);
+        
+
+        circle_marker_4341ba9bdbf9402e8b0673e1d39e59d6.bindPopup(popup_60c746c7a0c34273b07e84bbf6f6a416)
+        ;
+
+        
+    
+    
+            var circle_marker_0a46b37b187c4a0cb377d73da977ed97 = L.circleMarker(
+                [41.9313989, -87.7564561],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_c382d09996a246728a381433096056b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9bdfc07d5a6432b9e207c05a5903e7b = $(`<div id="html_f9bdfc07d5a6432b9e207c05a5903e7b" style="width: 100.0%; height: 100.0%;">Cragin, Rent $1942, Cluster 6</div>`)[0];
+            popup_c382d09996a246728a381433096056b1.setContent(html_f9bdfc07d5a6432b9e207c05a5903e7b);
+        
+
+        circle_marker_0a46b37b187c4a0cb377d73da977ed97.bindPopup(popup_c382d09996a246728a381433096056b1)
+        ;
+
+        
+    
+    
+            var circle_marker_9e826c4d7e0f4ee7a9b33dfa16e62ebd = L.circleMarker(
+                [41.8430889, -87.6278291],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_7ee70c8a36fd48fe99ad2058c703c729 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18081a0d02794245b9bed4d2f8896315 = $(`<div id="html_18081a0d02794245b9bed4d2f8896315" style="width: 100.0%; height: 100.0%;">Dearborn Homes, Rent $1437, Cluster 1</div>`)[0];
+            popup_7ee70c8a36fd48fe99ad2058c703c729.setContent(html_18081a0d02794245b9bed4d2f8896315);
+        
+
+        circle_marker_9e826c4d7e0f4ee7a9b33dfa16e62ebd.bindPopup(popup_7ee70c8a36fd48fe99ad2058c703c729)
+        ;
+
+        
+    
+    
+            var circle_marker_2309902c4c96450dad68c61273371206 = L.circleMarker(
+                [41.8664289, -87.62899949999999],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_806338e8c19d45f8b5f2e54df5d2bca1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f4a2fca37ab4a5da84e64c58bdda837 = $(`<div id="html_3f4a2fca37ab4a5da84e64c58bdda837" style="width: 100.0%; height: 100.0%;">Dearborn Park, Rent $2419, Cluster 2</div>`)[0];
+            popup_806338e8c19d45f8b5f2e54df5d2bca1.setContent(html_3f4a2fca37ab4a5da84e64c58bdda837);
+        
+
+        circle_marker_2309902c4c96450dad68c61273371206.bindPopup(popup_806338e8c19d45f8b5f2e54df5d2bca1)
+        ;
+
+        
+    
+    
+            var circle_marker_bee711434c084474a123fe7919911d0d = L.circleMarker(
+                [41.8593746, -87.6950899],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_e77f800e08714552a17386bb2081d45f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d73213ec00c2491e84a85d3cd4048a38 = $(`<div id="html_d73213ec00c2491e84a85d3cd4048a38" style="width: 100.0%; height: 100.0%;">Douglas Park, Rent $1110, Cluster 4</div>`)[0];
+            popup_e77f800e08714552a17386bb2081d45f.setContent(html_d73213ec00c2491e84a85d3cd4048a38);
+        
+
+        circle_marker_bee711434c084474a123fe7919911d0d.bindPopup(popup_e77f800e08714552a17386bb2081d45f)
+        ;
+
+        
+    
+    
+            var circle_marker_c4f4a8f791b7495ab26c54acdbc46812 = L.circleMarker(
+                [41.9452601, -87.8070003],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_cc37fe9cfb524cda823d53fbc213883d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c861015c7f13415cad24e07fdd13eb67 = $(`<div id="html_c861015c7f13415cad24e07fdd13eb67" style="width: 100.0%; height: 100.0%;">Dunning, Rent $1675, Cluster 6</div>`)[0];
+            popup_cc37fe9cfb524cda823d53fbc213883d.setContent(html_c861015c7f13415cad24e07fdd13eb67);
+        
+
+        circle_marker_c4f4a8f791b7495ab26c54acdbc46812.bindPopup(popup_cc37fe9cfb524cda823d53fbc213883d)
+        ;
+
+        
+    
+    
+            var circle_marker_4df4f82f6e1040caafae94329c1ddecb = L.circleMarker(
+                [41.7481345, -87.60135679999999],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_2c288a3e471547a2a06a913875b885a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_286b272a06d241ff9aa9983166af0834 = $(`<div id="html_286b272a06d241ff9aa9983166af0834" style="width: 100.0%; height: 100.0%;">East Chatham, Rent $782, Cluster 4</div>`)[0];
+            popup_2c288a3e471547a2a06a913875b885a2.setContent(html_286b272a06d241ff9aa9983166af0834);
+        
+
+        circle_marker_4df4f82f6e1040caafae94329c1ddecb.bindPopup(popup_2c288a3e471547a2a06a913875b885a2)
+        ;
+
+        
+    
+    
+            var circle_marker_5a91d0739718404482c0fa65e4f65546 = L.circleMarker(
+                [41.8810352, -87.70118459999999],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_45a859366fa24927b136fbaced54aad3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4769195a4e074c5c93cb93140b34c3f2 = $(`<div id="html_4769195a4e074c5c93cb93140b34c3f2" style="width: 100.0%; height: 100.0%;">East Garfield Park, Rent $1350, Cluster 4</div>`)[0];
+            popup_45a859366fa24927b136fbaced54aad3.setContent(html_4769195a4e074c5c93cb93140b34c3f2);
+        
+
+        circle_marker_5a91d0739718404482c0fa65e4f65546.bindPopup(popup_45a859366fa24927b136fbaced54aad3)
+        ;
+
+        
+    
+    
+            var circle_marker_8704d90d05de42d28b9ee7451a9ac01c = L.circleMarker(
+                [41.79627809999999, -87.58530429999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_2375e0a755314cecb45d6260407630be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51bb15b3effb49bcb27c5dbd1df765e2 = $(`<div id="html_51bb15b3effb49bcb27c5dbd1df765e2" style="width: 100.0%; height: 100.0%;">East Hyde Park, Rent $1431, Cluster 3</div>`)[0];
+            popup_2375e0a755314cecb45d6260407630be.setContent(html_51bb15b3effb49bcb27c5dbd1df765e2);
+        
+
+        circle_marker_8704d90d05de42d28b9ee7451a9ac01c.bindPopup(popup_2375e0a755314cecb45d6260407630be)
+        ;
+
+        
+    
+    
+            var circle_marker_23a99c5708cc474cb049a20f3e5b7885 = L.circleMarker(
+                [41.8576838, -87.6418826],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_d788d1dcdca64ecea5ff0224fcd363eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e926645c5414698b74bad738dd80433 = $(`<div id="html_0e926645c5414698b74bad738dd80433" style="width: 100.0%; height: 100.0%;">East Pilsen, Rent $1425, Cluster 3</div>`)[0];
+            popup_d788d1dcdca64ecea5ff0224fcd363eb.setContent(html_0e926645c5414698b74bad738dd80433);
+        
+
+        circle_marker_23a99c5708cc474cb049a20f3e5b7885.bindPopup(popup_d788d1dcdca64ecea5ff0224fcd363eb)
+        ;
+
+        
+    
+    
+            var circle_marker_12d1885fbb304dc8bbb84f5832443ee1 = L.circleMarker(
+                [41.8998114, -87.67229379999999],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_1e861499a7ec4bab944c22b5050774ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b7ebbd8997248c0930ff1b584a9988f = $(`<div id="html_7b7ebbd8997248c0930ff1b584a9988f" style="width: 100.0%; height: 100.0%;">East Village, Rent $2261, Cluster 2</div>`)[0];
+            popup_1e861499a7ec4bab944c22b5050774ed.setContent(html_7b7ebbd8997248c0930ff1b584a9988f);
+        
+
+        circle_marker_12d1885fbb304dc8bbb84f5832443ee1.bindPopup(popup_1e861499a7ec4bab944c22b5050774ed)
+        ;
+
+        
+    
+    
+            var circle_marker_f1ebd62dfb884b28bb09a83478799223 = L.circleMarker(
+                [41.9836852, -87.66011410000002],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6dde1fea5e6840cc8f7940b4d3dbce76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fd738c472934348ab825bb0a5dad926 = $(`<div id="html_0fd738c472934348ab825bb0a5dad926" style="width: 100.0%; height: 100.0%;">Edgewater, Rent $1206, Cluster 3</div>`)[0];
+            popup_6dde1fea5e6840cc8f7940b4d3dbce76.setContent(html_0fd738c472934348ab825bb0a5dad926);
+        
+
+        circle_marker_f1ebd62dfb884b28bb09a83478799223.bindPopup(popup_6dde1fea5e6840cc8f7940b4d3dbce76)
+        ;
+
+        
+    
+    
+            var circle_marker_03e01321244c409088c667a33b4d1058 = L.circleMarker(
+                [41.985577, -87.6552269],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_903b8f5c87744a24a02bab060c25e9a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ed2d762c8a74b759bf85b48b5005df4 = $(`<div id="html_0ed2d762c8a74b759bf85b48b5005df4" style="width: 100.0%; height: 100.0%;">Edgewater Beach, Rent $1229, Cluster 3</div>`)[0];
+            popup_903b8f5c87744a24a02bab060c25e9a2.setContent(html_0ed2d762c8a74b759bf85b48b5005df4);
+        
+
+        circle_marker_03e01321244c409088c667a33b4d1058.bindPopup(popup_903b8f5c87744a24a02bab060c25e9a2)
+        ;
+
+        
+    
+    
+            var circle_marker_22ec0402e659489b80eed104c723d3a1 = L.circleMarker(
+                [41.9930252, -87.6653544],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_f78f13b59a6745199e499ba93897429d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9457599af68545c194a69a170033ddd3 = $(`<div id="html_9457599af68545c194a69a170033ddd3" style="width: 100.0%; height: 100.0%;">Edgewater Glen, Rent $1206, Cluster 3</div>`)[0];
+            popup_f78f13b59a6745199e499ba93897429d.setContent(html_9457599af68545c194a69a170033ddd3);
+        
+
+        circle_marker_22ec0402e659489b80eed104c723d3a1.bindPopup(popup_f78f13b59a6745199e499ba93897429d)
+        ;
+
+        
+    
+    
+            var circle_marker_913220e295554f329feac42e3ef074a9 = L.circleMarker(
+                [41.775305, -87.6416419],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_651c26ffbcd5499b83e6b9bb4fcece06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33b1a3f40ec640cab02f09d9b1fb9fe0 = $(`<div id="html_33b1a3f40ec640cab02f09d9b1fb9fe0" style="width: 100.0%; height: 100.0%;">Englewood, Rent $827, Cluster 0</div>`)[0];
+            popup_651c26ffbcd5499b83e6b9bb4fcece06.setContent(html_33b1a3f40ec640cab02f09d9b1fb9fe0);
+        
+
+        circle_marker_913220e295554f329feac42e3ef074a9.bindPopup(popup_651c26ffbcd5499b83e6b9bb4fcece06)
+        ;
+
+        
+    
+    
+            var circle_marker_92bf4bf0958041f39301ddbc7ff94752 = L.circleMarker(
+                [41.7070703, -87.6335706],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_d9720c6eb125423ab0ea6f75ed041f58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f345f90e7167482abb49e1dcea7f1bb4 = $(`<div id="html_f345f90e7167482abb49e1dcea7f1bb4" style="width: 100.0%; height: 100.0%;">Fernwood, Rent $891, Cluster 0</div>`)[0];
+            popup_d9720c6eb125423ab0ea6f75ed041f58.setContent(html_f345f90e7167482abb49e1dcea7f1bb4);
+        
+
+        circle_marker_92bf4bf0958041f39301ddbc7ff94752.bindPopup(popup_d9720c6eb125423ab0ea6f75ed041f58)
+        ;
+
+        
+    
+    
+            var circle_marker_1d7da5b048c247ee881088b6f6d369a3 = L.circleMarker(
+                [41.8783073, -87.7111039],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_b92f12ed9e7f41368311328d7a0d1b28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e871a451960d4c978063039476b45723 = $(`<div id="html_e871a451960d4c978063039476b45723" style="width: 100.0%; height: 100.0%;">Fifth City, Rent $903, Cluster 4</div>`)[0];
+            popup_b92f12ed9e7f41368311328d7a0d1b28.setContent(html_e871a451960d4c978063039476b45723);
+        
+
+        circle_marker_1d7da5b048c247ee881088b6f6d369a3.bindPopup(popup_b92f12ed9e7f41368311328d7a0d1b28)
+        ;
+
+        
+    
+    
+            var circle_marker_552f5f58b8584b0fb989f2ec61c95e96 = L.circleMarker(
+                [41.7567469, -87.73249469999999],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_ca04dd6d42594dd99cbe1929a537faa4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91fdb76bbeed4f7ab04dbac0f601df80 = $(`<div id="html_91fdb76bbeed4f7ab04dbac0f601df80" style="width: 100.0%; height: 100.0%;">Ford City, Rent $1874, Cluster 6</div>`)[0];
+            popup_ca04dd6d42594dd99cbe1929a537faa4.setContent(html_91fdb76bbeed4f7ab04dbac0f601df80);
+        
+
+        circle_marker_552f5f58b8584b0fb989f2ec61c95e96.bindPopup(popup_ca04dd6d42594dd99cbe1929a537faa4)
+        ;
+
+        
+    
+    
+            var circle_marker_7906a12be1544f56bd887bb8d85b3753 = L.circleMarker(
+                [41.9961676, -87.76422149999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_d5df4eb392474f2795cb7676ff99593b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6816c93283d24817b57b60a7bdcfe533 = $(`<div id="html_6816c93283d24817b57b60a7bdcfe533" style="width: 100.0%; height: 100.0%;">Forest Glen, Rent $1349, Cluster 3</div>`)[0];
+            popup_d5df4eb392474f2795cb7676ff99593b.setContent(html_6816c93283d24817b57b60a7bdcfe533);
+        
+
+        circle_marker_7906a12be1544f56bd887bb8d85b3753.bindPopup(popup_d5df4eb392474f2795cb7676ff99593b)
+        ;
+
+        
+    
+    
+            var circle_marker_61133d57c7de47e2b05aa7398b63e7cf = L.circleMarker(
+                [41.8090919, -87.6333765],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_ebe9949b750446e5bf13d75fe426c22c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_411fc8628f084a1b968ca6909811b7fa = $(`<div id="html_411fc8628f084a1b968ca6909811b7fa" style="width: 100.0%; height: 100.0%;">Fuller Park, Rent $1200, Cluster 4</div>`)[0];
+            popup_ebe9949b750446e5bf13d75fe426c22c.setContent(html_411fc8628f084a1b968ca6909811b7fa);
+        
+
+        circle_marker_61133d57c7de47e2b05aa7398b63e7cf.bindPopup(popup_ebe9949b750446e5bf13d75fe426c22c)
+        ;
+
+        
+    
+    
+            var circle_marker_3445a6e9b81e4e28b16466629a89989f = L.circleMarker(
+                [41.8894949, -87.6433644],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_468f51f346764517bf403bb7e8f9095b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d239a43197549e6ac4fa36615dc34fb = $(`<div id="html_2d239a43197549e6ac4fa36615dc34fb" style="width: 100.0%; height: 100.0%;">Fulton River District, Rent $2160, Cluster 2</div>`)[0];
+            popup_468f51f346764517bf403bb7e8f9095b.setContent(html_2d239a43197549e6ac4fa36615dc34fb);
+        
+
+        circle_marker_3445a6e9b81e4e28b16466629a89989f.bindPopup(popup_468f51f346764517bf403bb7e8f9095b)
+        ;
+
+        
+    
+    
+            var circle_marker_d9fda1009af5478891366fc5eb09cab2 = L.circleMarker(
+                [41.7935203, -87.7035777],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6d251af09c53416f89ecc18eba38ed40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_479580090edb45218237b99ce2c237c0 = $(`<div id="html_479580090edb45218237b99ce2c237c0" style="width: 100.0%; height: 100.0%;">Gage Park, Rent $1366, Cluster 3</div>`)[0];
+            popup_6d251af09c53416f89ecc18eba38ed40.setContent(html_479580090edb45218237b99ce2c237c0);
+        
+
+        circle_marker_d9fda1009af5478891366fc5eb09cab2.bindPopup(popup_6d251af09c53416f89ecc18eba38ed40)
+        ;
+
+        
+    
+    
+            var circle_marker_395dd69120644413bf94f1e3cee3cd74 = L.circleMarker(
+                [41.9145056, -87.7925095],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_a3c934d7ffcc4a94b4c9615944a6c8ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3ae18114bd344a5b301aac007a9984d = $(`<div id="html_a3ae18114bd344a5b301aac007a9984d" style="width: 100.0%; height: 100.0%;">Galewood, Rent $1942, Cluster 2</div>`)[0];
+            popup_a3c934d7ffcc4a94b4c9615944a6c8ab.setContent(html_a3ae18114bd344a5b301aac007a9984d);
+        
+
+        circle_marker_395dd69120644413bf94f1e3cee3cd74.bindPopup(popup_a3c934d7ffcc4a94b4c9615944a6c8ab)
+        ;
+
+        
+    
+    
+            var circle_marker_9f800e45f763463ca24a1111e5db2fbc = L.circleMarker(
+                [41.8342593, -87.619872],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_656cfc12ffd54e6e8e1f8f8f29c0c9ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43b25c07b7944bdd8cb20db08d698e54 = $(`<div id="html_43b25c07b7944bdd8cb20db08d698e54" style="width: 100.0%; height: 100.0%;">The Gap, Rent $1437, Cluster 1</div>`)[0];
+            popup_656cfc12ffd54e6e8e1f8f8f29c0c9ba.setContent(html_43b25c07b7944bdd8cb20db08d698e54);
+        
+
+        circle_marker_9f800e45f763463ca24a1111e5db2fbc.bindPopup(popup_656cfc12ffd54e6e8e1f8f8f29c0c9ba)
+        ;
+
+        
+    
+    
+            var circle_marker_dd4d6a665ac6421480d042303720944f = L.circleMarker(
+                [41.9811108, -87.7750136],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_281baea03e7c4f4d8a4eaabdccca7230 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_293c60b2dd144728b29c099e5dd1b3e9 = $(`<div id="html_293c60b2dd144728b29c099e5dd1b3e9" style="width: 100.0%; height: 100.0%;">Gladstone Park, Rent $1349, Cluster 3</div>`)[0];
+            popup_281baea03e7c4f4d8a4eaabdccca7230.setContent(html_293c60b2dd144728b29c099e5dd1b3e9);
+        
+
+        circle_marker_dd4d6a665ac6421480d042303720944f.bindPopup(popup_281baea03e7c4f4d8a4eaabdccca7230)
+        ;
+
+        
+    
+    
+            var circle_marker_52e6770a7b904c6fa5dc7d1a9b885cac = L.circleMarker(
+                [41.9066994, -87.6253308],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_be729b51327d4be5bedf2409b5b0ab51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57d70f7203ad43dda9c1dc93b6e7cd77 = $(`<div id="html_57d70f7203ad43dda9c1dc93b6e7cd77" style="width: 100.0%; height: 100.0%;">Gold Coast, Rent $2259, Cluster 2</div>`)[0];
+            popup_be729b51327d4be5bedf2409b5b0ab51.setContent(html_57d70f7203ad43dda9c1dc93b6e7cd77);
+        
+
+        circle_marker_52e6770a7b904c6fa5dc7d1a9b885cac.bindPopup(popup_be729b51327d4be5bedf2409b5b0ab51)
+        ;
+
+        
+    
+    
+            var circle_marker_d7cdc63a965e4a6daa6eafd14f5657a3 = L.circleMarker(
+                [41.9044551, -87.65441369999999],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_c50507cafff445e183edb76124460d8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_014fb0d8df0843e5867a2f9c3b70898e = $(`<div id="html_014fb0d8df0843e5867a2f9c3b70898e" style="width: 100.0%; height: 100.0%;">Goose Island, Rent $2136, Cluster 2</div>`)[0];
+            popup_c50507cafff445e183edb76124460d8f.setContent(html_014fb0d8df0843e5867a2f9c3b70898e);
+        
+
+        circle_marker_d7cdc63a965e4a6daa6eafd14f5657a3.bindPopup(popup_c50507cafff445e183edb76124460d8f)
+        ;
+
+        
+    
+    
+            var circle_marker_a22c231a7deb463aa92beb8a21c020a2 = L.circleMarker(
+                [41.9599512, -87.6680743],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_5b21cee3fef245f8bd0090afb3006e0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc1e71f5f29042ba8dc0d0d1b360d8c2 = $(`<div id="html_bc1e71f5f29042ba8dc0d0d1b360d8c2" style="width: 100.0%; height: 100.0%;">Graceland West, Rent $1450, Cluster 3</div>`)[0];
+            popup_5b21cee3fef245f8bd0090afb3006e0c.setContent(html_bc1e71f5f29042ba8dc0d0d1b360d8c2);
+        
+
+        circle_marker_a22c231a7deb463aa92beb8a21c020a2.bindPopup(popup_5b21cee3fef245f8bd0090afb3006e0c)
+        ;
+
+        
+    
+    
+            var circle_marker_4a65b584bfaa4c56934b5eaa08706e9a = L.circleMarker(
+                [41.7657032, -87.61525069999999],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_2eb271bed7dd44c397690459d817e4d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b98c834a9bb64d0bba1dcc4b5147b8db = $(`<div id="html_b98c834a9bb64d0bba1dcc4b5147b8db" style="width: 100.0%; height: 100.0%;">Greater Grand Crossing, Rent $1094, Cluster 4</div>`)[0];
+            popup_2eb271bed7dd44c397690459d817e4d9.setContent(html_b98c834a9bb64d0bba1dcc4b5147b8db);
+        
+
+        circle_marker_4a65b584bfaa4c56934b5eaa08706e9a.bindPopup(popup_2eb271bed7dd44c397690459d817e4d9)
+        ;
+
+        
+    
+    
+            var circle_marker_066e160d87be41d3a6681a81cf1fa29f = L.circleMarker(
+                [41.87856439999999, -87.6470504],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_be56b38afd9541a48c28bdce0de54d8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_705be7e6a9774fcb8dab5024fa23ae21 = $(`<div id="html_705be7e6a9774fcb8dab5024fa23ae21" style="width: 100.0%; height: 100.0%;">Greektown, Rent $2105, Cluster 2</div>`)[0];
+            popup_be56b38afd9541a48c28bdce0de54d8d.setContent(html_705be7e6a9774fcb8dab5024fa23ae21);
+        
+
+        circle_marker_066e160d87be41d3a6681a81cf1fa29f.bindPopup(popup_be56b38afd9541a48c28bdce0de54d8d)
+        ;
+
+        
+    
+    
+            var circle_marker_91d8e5edfd184b3894c928ba5f8983af = L.circleMarker(
+                [41.8321796, -87.609381],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_8d07e6d2486b4e37b61e1f8aaf38422b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c542464b93d146ffb07319c78089724b = $(`<div id="html_c542464b93d146ffb07319c78089724b" style="width: 100.0%; height: 100.0%;">Groveland Park, Rent $1437, Cluster 1</div>`)[0];
+            popup_8d07e6d2486b4e37b61e1f8aaf38422b.setContent(html_c542464b93d146ffb07319c78089724b);
+        
+
+        circle_marker_91d8e5edfd184b3894c928ba5f8983af.bindPopup(popup_8d07e6d2486b4e37b61e1f8aaf38422b)
+        ;
+
+        
+    
+    
+            var circle_marker_8375b8ec414f43fcb61301e9a8646aad = L.circleMarker(
+                [41.9212796, -87.7609641],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_0d5f3ee0038447e187be33c87d7509ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15122d0049c44da69170100ac6c1cad7 = $(`<div id="html_15122d0049c44da69170100ac6c1cad7" style="width: 100.0%; height: 100.0%;">Hanson Park, Rent $1942, Cluster 6</div>`)[0];
+            popup_0d5f3ee0038447e187be33c87d7509ca.setContent(html_15122d0049c44da69170100ac6c1cad7);
+        
+
+        circle_marker_8375b8ec414f43fcb61301e9a8646aad.bindPopup(popup_0d5f3ee0038447e187be33c87d7509ca)
+        ;
+
+        
+    
+    
+            var circle_marker_b314e94a45184512b6f4ac6120a0cc81 = L.circleMarker(
+                [41.848532, -87.675755],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_774da645f01e4d9daa0701bfdce3687f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_767c41fc672641ca810004afd6f188bd = $(`<div id="html_767c41fc672641ca810004afd6f188bd" style="width: 100.0%; height: 100.0%;">Heart of Chicago, Rent $959, Cluster 3</div>`)[0];
+            popup_774da645f01e4d9daa0701bfdce3687f.setContent(html_767c41fc672641ca810004afd6f188bd);
+        
+
+        circle_marker_b314e94a45184512b6f4ac6120a0cc81.bindPopup(popup_774da645f01e4d9daa0701bfdce3687f)
+        ;
+
+        
+    
+    
+            var circle_marker_00ca4d34c8a445618fb841a14112f9c2 = L.circleMarker(
+                [41.9207326, -87.7339993],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_791b0842a5e54ef58eb33f5e9f9abeb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_633c21a8a2df45379608f2e759668f41 = $(`<div id="html_633c21a8a2df45379608f2e759668f41" style="width: 100.0%; height: 100.0%;">Hermosa, Rent $1942, Cluster 6</div>`)[0];
+            popup_791b0842a5e54ef58eb33f5e9f9abeb4.setContent(html_633c21a8a2df45379608f2e759668f41);
+        
+
+        circle_marker_00ca4d34c8a445618fb841a14112f9c2.bindPopup(popup_791b0842a5e54ef58eb33f5e9f9abeb4)
+        ;
+
+        
+    
+    
+            var circle_marker_2532c29769b84bd18b3381d860d075b7 = L.circleMarker(
+                [41.9866025, -87.7175292],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_62333ed475af4870a42681beb1ade44f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1af99483e1e34f0486590d0179f63118 = $(`<div id="html_1af99483e1e34f0486590d0179f63118" style="width: 100.0%; height: 100.0%;">Hollywood Park, Rent $1314, Cluster 3</div>`)[0];
+            popup_62333ed475af4870a42681beb1ade44f.setContent(html_1af99483e1e34f0486590d0179f63118);
+        
+
+        circle_marker_2532c29769b84bd18b3381d860d075b7.bindPopup(popup_62333ed475af4870a42681beb1ade44f)
+        ;
+
+        
+    
+    
+            var circle_marker_6323a0fe777e4a20b7cd8ff975c92dc7 = L.circleMarker(
+                [41.8696952, -87.7147986],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_28fe85daf35044658f7ddfd0271305b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fff704094ce549b9a2b82ad59099b241 = $(`<div id="html_fff704094ce549b9a2b82ad59099b241" style="width: 100.0%; height: 100.0%;">Homan Square, Rent $903, Cluster 4</div>`)[0];
+            popup_28fe85daf35044658f7ddfd0271305b2.setContent(html_fff704094ce549b9a2b82ad59099b241);
+        
+
+        circle_marker_6323a0fe777e4a20b7cd8ff975c92dc7.bindPopup(popup_28fe85daf35044658f7ddfd0271305b2)
+        ;
+
+        
+    
+    
+            var circle_marker_f99494e9859249f9aa2fd1b5ca238590 = L.circleMarker(
+                [41.8990752, -87.721293],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_c7ebe70548bf4acfbd29a6ab6594cfc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37b9adcabd954d1c9df6d1141871aeae = $(`<div id="html_37b9adcabd954d1c9df6d1141871aeae" style="width: 100.0%; height: 100.0%;">Humboldt Park, Rent $1940, Cluster 2</div>`)[0];
+            popup_c7ebe70548bf4acfbd29a6ab6594cfc4.setContent(html_37b9adcabd954d1c9df6d1141871aeae);
+        
+
+        circle_marker_f99494e9859249f9aa2fd1b5ca238590.bindPopup(popup_c7ebe70548bf4acfbd29a6ab6594cfc4)
+        ;
+
+        
+    
+    
+            var circle_marker_e5789d267f394c568f48e29999b3d404 = L.circleMarker(
+                [41.7947665, -87.59167529999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_285281c03d7047798caa56d83521a018 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_120ff45442894e64a767d32d23c368c6 = $(`<div id="html_120ff45442894e64a767d32d23c368c6" style="width: 100.0%; height: 100.0%;">Hyde Park, Rent $1431, Cluster 3</div>`)[0];
+            popup_285281c03d7047798caa56d83521a018.setContent(html_120ff45442894e64a767d32d23c368c6);
+        
+
+        circle_marker_e5789d267f394c568f48e29999b3d404.bindPopup(popup_285281c03d7047798caa56d83521a018)
+        ;
+
+        
+    
+    
+            var circle_marker_76a366eb09c64256a5f59f9aca1494ac = L.circleMarker(
+                [41.86849429999999, -87.67397489999999],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_cd92d9fe3c6a4cef81f56c215b0fdb96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5be0721f6fea48e0a3b9dca8473bd887 = $(`<div id="html_5be0721f6fea48e0a3b9dca8473bd887" style="width: 100.0%; height: 100.0%;">Illinois Medical District, Rent $1358, Cluster 1</div>`)[0];
+            popup_cd92d9fe3c6a4cef81f56c215b0fdb96.setContent(html_5be0721f6fea48e0a3b9dca8473bd887);
+        
+
+        circle_marker_76a366eb09c64256a5f59f9aca1494ac.bindPopup(popup_cd92d9fe3c6a4cef81f56c215b0fdb96)
+        ;
+
+        
+    
+    
+            var circle_marker_b633776f1d714c07a88cda2f8d331fc6 = L.circleMarker(
+                [41.9538222, -87.7192875],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_00c4f1a36c9b4bec9fa09e43f051e195 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d4e0b4ca2024e879e29aa891c77cb8e = $(`<div id="html_5d4e0b4ca2024e879e29aa891c77cb8e" style="width: 100.0%; height: 100.0%;">Irving Park, Rent $1102, Cluster 3</div>`)[0];
+            popup_00c4f1a36c9b4bec9fa09e43f051e195.setContent(html_5d4e0b4ca2024e879e29aa891c77cb8e);
+        
+
+        circle_marker_b633776f1d714c07a88cda2f8d331fc6.bindPopup(popup_00c4f1a36c9b4bec9fa09e43f051e195)
+        ;
+
+        
+    
+    
+            var circle_marker_930a82ee722c4ba6946bf06baef6c7da = L.circleMarker(
+                [41.9486764, -87.8300628],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_2f6060c320e44c9694021bdb15c44a38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7990df2f908d4b1abc2013c2598f880b = $(`<div id="html_7990df2f908d4b1abc2013c2598f880b" style="width: 100.0%; height: 100.0%;">Irving Woods, Rent $1675, Cluster 6</div>`)[0];
+            popup_2f6060c320e44c9694021bdb15c44a38.setContent(html_7990df2f908d4b1abc2013c2598f880b);
+        
+
+        circle_marker_930a82ee722c4ba6946bf06baef6c7da.bindPopup(popup_2f6060c320e44c9694021bdb15c44a38)
+        ;
+
+        
+    
+    
+            var circle_marker_1cb42414842d4886b49f2927f8f9cd25 = L.circleMarker(
+                [41.8670575, -87.7701836],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6f23b944d70649c1bece1f6edce73674 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64442fe77d5d465fa8b87be9ab30f26e = $(`<div id="html_64442fe77d5d465fa8b87be9ab30f26e" style="width: 100.0%; height: 100.0%;">The Island, Rent $608, Cluster 0</div>`)[0];
+            popup_6f23b944d70649c1bece1f6edce73674.setContent(html_64442fe77d5d465fa8b87be9ab30f26e);
+        
+
+        circle_marker_1cb42414842d4886b49f2927f8f9cd25.bindPopup(popup_6f23b944d70649c1bece1f6edce73674)
+        ;
+
+        
+    
+    
+            var circle_marker_5cb68a61f25a4478a8af471a033c96ab = L.circleMarker(
+                [41.768781, -87.5778935],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6a41eb8f5c27405a9ed8cf1a9ea82cf8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce1becbdb46b430d93081db7cad51fbe = $(`<div id="html_ce1becbdb46b430d93081db7cad51fbe" style="width: 100.0%; height: 100.0%;">Jackson Park Highlands, Rent $1047, Cluster 0</div>`)[0];
+            popup_6a41eb8f5c27405a9ed8cf1a9ea82cf8.setContent(html_ce1becbdb46b430d93081db7cad51fbe);
+        
+
+        circle_marker_5cb68a61f25a4478a8af471a033c96ab.bindPopup(popup_6a41eb8f5c27405a9ed8cf1a9ea82cf8)
+        ;
+
+        
+    
+    
+            var circle_marker_b3070697268b4d90aa956cf2f093b112 = L.circleMarker(
+                [41.982504, -87.77039979999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_faf8d3208bc34ffe9d9cb735cc48cf40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7858837c61284d8ea9b7d2755336530e = $(`<div id="html_7858837c61284d8ea9b7d2755336530e" style="width: 100.0%; height: 100.0%;">Jefferson Park, Rent $1349, Cluster 3</div>`)[0];
+            popup_faf8d3208bc34ffe9d9cb735cc48cf40.setContent(html_7858837c61284d8ea9b7d2755336530e);
+        
+
+        circle_marker_b3070697268b4d90aa956cf2f093b112.bindPopup(popup_faf8d3208bc34ffe9d9cb735cc48cf40)
+        ;
+
+        
+    
+    
+            var circle_marker_bb7ccc160f3c418c92c12404afc1cfc4 = L.circleMarker(
+                [41.9323486, -87.7443371],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_4ce83bbb84ab44f8b531bde75f7f946f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96f6c55f6758450eb29a55d452e8274b = $(`<div id="html_96f6c55f6758450eb29a55d452e8274b" style="width: 100.0%; height: 100.0%;">Kelvyn Park, Rent $1942, Cluster 6</div>`)[0];
+            popup_4ce83bbb84ab44f8b531bde75f7f946f.setContent(html_96f6c55f6758450eb29a55d452e8274b);
+        
+
+        circle_marker_bb7ccc160f3c418c92c12404afc1cfc4.bindPopup(popup_4ce83bbb84ab44f8b531bde75f7f946f)
+        ;
+
+        
+    
+    
+            var circle_marker_436730dbc98f4823aa8a1ee78067ef60 = L.circleMarker(
+                [41.6882328, -87.68569819999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_21bf2fbfb81640279277fdfda910a9ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abd0c950ec114071a0bda5fcc0955670 = $(`<div id="html_abd0c950ec114071a0bda5fcc0955670" style="width: 100.0%; height: 100.0%;">Kennedy Park, Rent $1317, Cluster 3</div>`)[0];
+            popup_21bf2fbfb81640279277fdfda910a9ac.setContent(html_abd0c950ec114071a0bda5fcc0955670);
+        
+
+        circle_marker_436730dbc98f4823aa8a1ee78067ef60.bindPopup(popup_21bf2fbfb81640279277fdfda910a9ac)
+        ;
+
+        
+    
+    
+            var circle_marker_903ffe198c424f36a4515c01204ac513 = L.circleMarker(
+                [41.8094772, -87.59326639999999],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_f7efbfd3266d45c7bbb7473e2d0b55ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d6d65f110014227824049d0a9bc3cab = $(`<div id="html_8d6d65f110014227824049d0a9bc3cab" style="width: 100.0%; height: 100.0%;">Kenwood, Rent $1556, Cluster 6</div>`)[0];
+            popup_f7efbfd3266d45c7bbb7473e2d0b55ba.setContent(html_8d6d65f110014227824049d0a9bc3cab);
+        
+
+        circle_marker_903ffe198c424f36a4515c01204ac513.bindPopup(popup_f7efbfd3266d45c7bbb7473e2d0b55ba)
+        ;
+
+        
+    
+    
+            var circle_marker_a5b0385d8364439e840bf331f5d2c6ca = L.circleMarker(
+                [41.835229, -87.6140426],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_b003e9be3807456fb7ca5357b92c2e6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b89c6d40b9c54baea24b0df2e8e55dd8 = $(`<div id="html_b89c6d40b9c54baea24b0df2e8e55dd8" style="width: 100.0%; height: 100.0%;">Lake Meadows, Rent $1437, Cluster 1</div>`)[0];
+            popup_b003e9be3807456fb7ca5357b92c2e6e.setContent(html_b89c6d40b9c54baea24b0df2e8e55dd8);
+        
+
+        circle_marker_a5b0385d8364439e840bf331f5d2c6ca.bindPopup(popup_b003e9be3807456fb7ca5357b92c2e6e)
+        ;
+
+        
+    
+    
+            var circle_marker_d301c3c1586145629ec86fcd231c78cd = L.circleMarker(
+                [41.9397814, -87.6589273],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_1890c30ee81742a1bdea322286c56cfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b18aec9ff794600b6b1e937a029c62b = $(`<div id="html_8b18aec9ff794600b6b1e937a029c62b" style="width: 100.0%; height: 100.0%;">Lake View, Rent $1584, Cluster 6</div>`)[0];
+            popup_1890c30ee81742a1bdea322286c56cfc.setContent(html_8b18aec9ff794600b6b1e937a029c62b);
+        
+
+        circle_marker_d301c3c1586145629ec86fcd231c78cd.bindPopup(popup_1890c30ee81742a1bdea322286c56cfc)
+        ;
+
+        
+    
+    
+            var circle_marker_878457734d234eb19579cb5fe0b71cc5 = L.circleMarker(
+                [41.9799008, -87.6624815],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_dfbbebbae5cb4aaea6f99bfdeebafd0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e2aac13fc194e3384943785c09f3ec9 = $(`<div id="html_9e2aac13fc194e3384943785c09f3ec9" style="width: 100.0%; height: 100.0%;">Lakewood / Balmoral, Rent $1241, Cluster 3</div>`)[0];
+            popup_dfbbebbae5cb4aaea6f99bfdeebafd0f.setContent(html_9e2aac13fc194e3384943785c09f3ec9);
+        
+
+        circle_marker_878457734d234eb19579cb5fe0b71cc5.bindPopup(popup_dfbbebbae5cb4aaea6f99bfdeebafd0f)
+        ;
+
+        
+    
+    
+            var circle_marker_c2c69661404b434fbf2a2b460d94f401 = L.circleMarker(
+                [41.9254701, -87.64877829999999],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_e907fac6195b486eb7639d8274fc7e27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_747a71f6b795430daa3184d12e0232d0 = $(`<div id="html_747a71f6b795430daa3184d12e0232d0" style="width: 100.0%; height: 100.0%;">Lincoln Park, Rent $1825, Cluster 6</div>`)[0];
+            popup_e907fac6195b486eb7639d8274fc7e27.setContent(html_747a71f6b795430daa3184d12e0232d0);
+        
+
+        circle_marker_c2c69661404b434fbf2a2b460d94f401.bindPopup(popup_e907fac6195b486eb7639d8274fc7e27)
+        ;
+
+        
+    
+    
+            var circle_marker_bb94a09c30e34c028ec04441da8f105c = L.circleMarker(
+                [41.9686816, -87.6889648],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_742a78d7942142c389d909e0f87610ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f33c9fd45a504411835b72cf1ee39cc9 = $(`<div id="html_f33c9fd45a504411835b72cf1ee39cc9" style="width: 100.0%; height: 100.0%;">Lincoln Square, Rent $1210, Cluster 3</div>`)[0];
+            popup_742a78d7942142c389d909e0f87610ad.setContent(html_f33c9fd45a504411835b72cf1ee39cc9);
+        
+
+        circle_marker_bb94a09c30e34c028ec04441da8f105c.bindPopup(popup_742a78d7942142c389d909e0f87610ad)
+        ;
+
+        
+    
+    
+            var circle_marker_ed11550bf8f24acfbba426d1aaaa56fd = L.circleMarker(
+                [41.7669896, -87.6873889],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_e41cb56ec3c74a25af23a051aaab2e8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10c614869fed4da7953675dd4a666988 = $(`<div id="html_10c614869fed4da7953675dd4a666988" style="width: 100.0%; height: 100.0%;">Lithuanian Plaza, Rent $1874, Cluster 6</div>`)[0];
+            popup_e41cb56ec3c74a25af23a051aaab2e8e.setContent(html_10c614869fed4da7953675dd4a666988);
+        
+
+        circle_marker_ed11550bf8f24acfbba426d1aaaa56fd.bindPopup(popup_e41cb56ec3c74a25af23a051aaab2e8e)
+        ;
+
+        
+    
+    
+            var circle_marker_0c470274bdb341e4a47b2f4f8eea27e5 = L.circleMarker(
+                [41.86954009999999, -87.6511328],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_beb5905d922e457db4b5eb3638858b81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b83f90ee3d54c109cedc115b28f4063 = $(`<div id="html_0b83f90ee3d54c109cedc115b28f4063" style="width: 100.0%; height: 100.0%;">Little Italy, University Village, Rent $2307, Cluster 2</div>`)[0];
+            popup_beb5905d922e457db4b5eb3638858b81.setContent(html_0b83f90ee3d54c109cedc115b28f4063);
+        
+
+        circle_marker_0c470274bdb341e4a47b2f4f8eea27e5.bindPopup(popup_beb5905d922e457db4b5eb3638858b81)
+        ;
+
+        
+    
+    
+            var circle_marker_43a4940c130e4228a9891daa630fb9ca = L.circleMarker(
+                [41.8445273, -87.7050446],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_3a7c677e51dc4e148afee74c3331d48c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd0e8a9b10a14ee1b5c5ce35d5ac938d = $(`<div id="html_cd0e8a9b10a14ee1b5c5ce35d5ac938d" style="width: 100.0%; height: 100.0%;">Little Village, Rent $1110, Cluster 3</div>`)[0];
+            popup_3a7c677e51dc4e148afee74c3331d48c.setContent(html_cd0e8a9b10a14ee1b5c5ce35d5ac938d);
+        
+
+        circle_marker_43a4940c130e4228a9891daa630fb9ca.bindPopup(popup_3a7c677e51dc4e148afee74c3331d48c)
+        ;
+
+        
+    
+    
+            var circle_marker_fe0836302a13400f99c0b863ee456509 = L.circleMarker(
+                [41.9230598, -87.70929079999999],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_b1b744cde5bb48d0adb7c3cc5879da08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf78b75b306840cc9c35ee6a9268af13 = $(`<div id="html_cf78b75b306840cc9c35ee6a9268af13" style="width: 100.0%; height: 100.0%;">Logan Square, Rent $1785, Cluster 6</div>`)[0];
+            popup_b1b744cde5bb48d0adb7c3cc5879da08.setContent(html_cf78b75b306840cc9c35ee6a9268af13);
+        
+
+        circle_marker_fe0836302a13400f99c0b863ee456509.bindPopup(popup_b1b744cde5bb48d0adb7c3cc5879da08)
+        ;
+
+        
+    
+    
+            var circle_marker_86e4871b766a4e6c9943adfd1f64e784 = L.circleMarker(
+                [41.7176094, -87.6455543],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_df6e85a1af8440968c48b6141ed697c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e13551209172401b8b7d011c412846d8 = $(`<div id="html_e13551209172401b8b7d011c412846d8" style="width: 100.0%; height: 100.0%;">Longwood Manor, Rent $891, Cluster 0</div>`)[0];
+            popup_df6e85a1af8440968c48b6141ed697c9.setContent(html_e13551209172401b8b7d011c412846d8);
+        
+
+        circle_marker_86e4871b766a4e6c9943adfd1f64e784.bindPopup(popup_df6e85a1af8440968c48b6141ed697c9)
+        ;
+
+        
+    
+    
+            var circle_marker_ee8aa121dfcd4e77896fd219426efae0 = L.circleMarker(
+                [41.8786351, -87.6250549],
+                {"bubblingMouseEvents": true, "color": "#e377c2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e377c2", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_d909e428db5b470ba6306f405daa5c1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62548aecff9b405a824655e081524f54 = $(`<div id="html_62548aecff9b405a824655e081524f54" style="width: 100.0%; height: 100.0%;">The Loop, Rent $2191, Cluster 5</div>`)[0];
+            popup_d909e428db5b470ba6306f405daa5c1c.setContent(html_62548aecff9b405a824655e081524f54);
+        
+
+        circle_marker_ee8aa121dfcd4e77896fd219426efae0.bindPopup(popup_d909e428db5b470ba6306f405daa5c1c)
+        ;
+
+        
+    
+    
+            var circle_marker_53d288f10c5345d39d016adfc556094f = L.circleMarker(
+                [41.97208800000001, -87.64977429999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6a0e0acbce0240139b7731442b85b1f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e5abaf3041a445da71375912a236b99 = $(`<div id="html_9e5abaf3041a445da71375912a236b99" style="width: 100.0%; height: 100.0%;">Margate Park, Rent $1241, Cluster 3</div>`)[0];
+            popup_6a0e0acbce0240139b7731442b85b1f4.setContent(html_9e5abaf3041a445da71375912a236b99);
+        
+
+        circle_marker_53d288f10c5345d39d016adfc556094f.bindPopup(popup_6a0e0acbce0240139b7731442b85b1f4)
+        ;
+
+        
+    
+    
+            var circle_marker_92edbea803684998b5bf36f5b6827e5d = L.circleMarker(
+                [41.7644001, -87.70285559999999],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_fc7838b5ce0f491c83b0e6173a01a2b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea88c2511b3743209ff8f2a9d1edf066 = $(`<div id="html_ea88c2511b3743209ff8f2a9d1edf066" style="width: 100.0%; height: 100.0%;">Marquette Park, Rent $1874, Cluster 6</div>`)[0];
+            popup_fc7838b5ce0f491c83b0e6173a01a2b2.setContent(html_ea88c2511b3743209ff8f2a9d1edf066);
+        
+
+        circle_marker_92edbea803684998b5bf36f5b6827e5d.bindPopup(popup_fc7838b5ce0f491c83b0e6173a01a2b2)
+        ;
+
+        
+    
+    
+            var circle_marker_4bb00b94da014c9b8903cf9cd7272abc = L.circleMarker(
+                [41.7392485, -87.5927138],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_550f0ec3e2c443e1a904bf471b5a6f9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73521c5913684589bfa932ab3b49e9f0 = $(`<div id="html_73521c5913684589bfa932ab3b49e9f0" style="width: 100.0%; height: 100.0%;">Marynook, Rent $782, Cluster 0</div>`)[0];
+            popup_550f0ec3e2c443e1a904bf471b5a6f9b.setContent(html_73521c5913684589bfa932ab3b49e9f0);
+        
+
+        circle_marker_4bb00b94da014c9b8903cf9cd7272abc.bindPopup(popup_550f0ec3e2c443e1a904bf471b5a6f9b)
+        ;
+
+        
+    
+    
+            var circle_marker_576b41cb1cc34e7bafae09ec39c817c3 = L.circleMarker(
+                [41.9645046, -87.73712880000001],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_38b4aff9b1ce42d4974fff948300634c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f491a4176004ff4becaf120d602508e = $(`<div id="html_4f491a4176004ff4becaf120d602508e" style="width: 100.0%; height: 100.0%;">Mayfair, Rent $1349, Cluster 3</div>`)[0];
+            popup_38b4aff9b1ce42d4974fff948300634c.setContent(html_4f491a4176004ff4becaf120d602508e);
+        
+
+        circle_marker_576b41cb1cc34e7bafae09ec39c817c3.bindPopup(popup_38b4aff9b1ce42d4974fff948300634c)
+        ;
+
+        
+    
+    
+            var circle_marker_39018221728d4b56ab529942ed84b0b5 = L.circleMarker(
+                [41.8316175, -87.6729074],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6c8dda0012804614a8010e6a4d82894d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b48cc6b8c3d64cb783c88643133261fe = $(`<div id="html_b48cc6b8c3d64cb783c88643133261fe" style="width: 100.0%; height: 100.0%;">McKinley Park, Rent $1147, Cluster 3</div>`)[0];
+            popup_6c8dda0012804614a8010e6a4d82894d.setContent(html_b48cc6b8c3d64cb783c88643133261fe);
+        
+
+        circle_marker_39018221728d4b56ab529942ed84b0b5.bindPopup(popup_6c8dda0012804614a8010e6a4d82894d)
+        ;
+
+        
+    
+    
+            var circle_marker_547d531330e5448a805de1af4ef5f331 = L.circleMarker(
+                [41.929382, -87.7981597],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_76bef3f1d3fb4d67938550d883159703 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b306fdb5bee04e3b8fe118c9d57d29e2 = $(`<div id="html_b306fdb5bee04e3b8fe118c9d57d29e2" style="width: 100.0%; height: 100.0%;">Montclare, Rent $1675, Cluster 6</div>`)[0];
+            popup_76bef3f1d3fb4d67938550d883159703.setContent(html_b306fdb5bee04e3b8fe118c9d57d29e2);
+        
+
+        circle_marker_547d531330e5448a805de1af4ef5f331.bindPopup(popup_76bef3f1d3fb4d67938550d883159703)
+        ;
+
+        
+    
+    
+            var circle_marker_77e85968593044f9b48de3da06b8909c = L.circleMarker(
+                [41.6915904, -87.7008049],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_fde3cfc6b5514010bde4007023d8bee9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bea8d7a907048938244249b25f6d270 = $(`<div id="html_9bea8d7a907048938244249b25f6d270" style="width: 100.0%; height: 100.0%;">Mount Greenwood, Rent $1317, Cluster 3</div>`)[0];
+            popup_fde3cfc6b5514010bde4007023d8bee9.setContent(html_9bea8d7a907048938244249b25f6d270);
+        
+
+        circle_marker_77e85968593044f9b48de3da06b8909c.bindPopup(popup_fde3cfc6b5514010bde4007023d8bee9)
+        ;
+
+        
+    
+    
+            var circle_marker_57b556d7c6374fdcbc3171f4fdaeedf1 = L.circleMarker(
+                [41.8862397, -87.61742079999999],
+                {"bubblingMouseEvents": true, "color": "#e377c2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e377c2", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_37150420dfde46e092d9fc739631e0db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eab48756a8c44489a4b116353235efa9 = $(`<div id="html_eab48756a8c44489a4b116353235efa9" style="width: 100.0%; height: 100.0%;">New Eastside, Rent $2316, Cluster 5</div>`)[0];
+            popup_37150420dfde46e092d9fc739631e0db.setContent(html_eab48756a8c44489a4b116353235efa9);
+        
+
+        circle_marker_57b556d7c6374fdcbc3171f4fdaeedf1.bindPopup(popup_37150420dfde46e092d9fc739631e0db)
+        ;
+
+        
+    
+    
+            var circle_marker_72de485647ef469196190cc36d79535a = L.circleMarker(
+                [41.90391, -87.6314629],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_a6b3965ebb7f42d1b8230835ea1b5763 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09783a929e944fb796cbe292a610e42d = $(`<div id="html_09783a929e944fb796cbe292a610e42d" style="width: 100.0%; height: 100.0%;">Near North Side, Rent $2273, Cluster 2</div>`)[0];
+            popup_a6b3965ebb7f42d1b8230835ea1b5763.setContent(html_09783a929e944fb796cbe292a610e42d);
+        
+
+        circle_marker_72de485647ef469196190cc36d79535a.bindPopup(popup_a6b3965ebb7f42d1b8230835ea1b5763)
+        ;
+
+        
+    
+    
+            var circle_marker_31ffc749e1d4441c9aaff0acf73e255c = L.circleMarker(
+                [41.8668456, -87.6664093],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_421214e4f44d47d5ae2417b8ba5e45cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_862d059b3cd34b63ab085b7957825bb4 = $(`<div id="html_862d059b3cd34b63ab085b7957825bb4" style="width: 100.0%; height: 100.0%;">Near West Side, Rent $2291, Cluster 2</div>`)[0];
+            popup_421214e4f44d47d5ae2417b8ba5e45cb.setContent(html_862d059b3cd34b63ab085b7957825bb4);
+        
+
+        circle_marker_31ffc749e1d4441c9aaff0acf73e255c.bindPopup(popup_421214e4f44d47d5ae2417b8ba5e45cb)
+        ;
+
+        
+    
+    
+            var circle_marker_53de8c647c5b4ad2aba7a49a377d925d = L.circleMarker(
+                [41.8993311, -87.6638512],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_07e1bc41d72147a4aad6b3961d9fe534 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78af8325f31146eb9344b2fc2f355560 = $(`<div id="html_78af8325f31146eb9344b2fc2f355560" style="width: 100.0%; height: 100.0%;">Noble Square, Rent $2233, Cluster 2</div>`)[0];
+            popup_07e1bc41d72147a4aad6b3961d9fe534.setContent(html_78af8325f31146eb9344b2fc2f355560);
+        
+
+        circle_marker_53de8c647c5b4ad2aba7a49a377d925d.bindPopup(popup_07e1bc41d72147a4aad6b3961d9fe534)
+        ;
+
+        
+    
+    
+            var circle_marker_324a070a78284aff93cae8abd177e486 = L.circleMarker(
+                [41.9467449, -87.6882569],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_e290155dbb5b42c197d98f1b235b4d93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14eb6108b79540a79fde66c71b157739 = $(`<div id="html_14eb6108b79540a79fde66c71b157739" style="width: 100.0%; height: 100.0%;">North Center, Rent $1445, Cluster 3</div>`)[0];
+            popup_e290155dbb5b42c197d98f1b235b4d93.setContent(html_14eb6108b79540a79fde66c71b157739);
+        
+
+        circle_marker_324a070a78284aff93cae8abd177e486.bindPopup(popup_e290155dbb5b42c197d98f1b235b4d93)
+        ;
+
+        
+    
+    
+            var circle_marker_501cf79d54484363bed6b336295f3d8f = L.circleMarker(
+                [41.8132628, -87.5992004],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6684fdc5abd841908ee8a3621b9da6fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c9777d65fdb4e5fb2c9252baf8d90f8 = $(`<div id="html_9c9777d65fdb4e5fb2c9252baf8d90f8" style="width: 100.0%; height: 100.0%;">North Kenwood, Rent $1202, Cluster 3</div>`)[0];
+            popup_6684fdc5abd841908ee8a3621b9da6fa.setContent(html_9c9777d65fdb4e5fb2c9252baf8d90f8);
+        
+
+        circle_marker_501cf79d54484363bed6b336295f3d8f.bindPopup(popup_6684fdc5abd841908ee8a3621b9da6fa)
+        ;
+
+        
+    
+    
+            var circle_marker_62b62c3f86674e849b7dcaafe2fb2615 = L.circleMarker(
+                [41.8589782, -87.7152017],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_379d8f1609a544019113f2f7dfd30ada = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d63477a363644539457a401854204ad = $(`<div id="html_7d63477a363644539457a401854204ad" style="width: 100.0%; height: 100.0%;">North Lawndale, Rent $1510, Cluster 4</div>`)[0];
+            popup_379d8f1609a544019113f2f7dfd30ada.setContent(html_7d63477a363644539457a401854204ad);
+        
+
+        circle_marker_62b62c3f86674e849b7dcaafe2fb2615.bindPopup(popup_379d8f1609a544019113f2f7dfd30ada)
+        ;
+
+        
+    
+    
+            var circle_marker_c9a3eb133a394d99b5824a05859ca3c6 = L.circleMarker(
+                [41.971802, -87.7373866],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_a24efb4e982a4ebdbee9ed5535aec275 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24557fcc41c044099123f906edd1467f = $(`<div id="html_24557fcc41c044099123f906edd1467f" style="width: 100.0%; height: 100.0%;">North Mayfair, Rent $1349, Cluster 3</div>`)[0];
+            popup_a24efb4e982a4ebdbee9ed5535aec275.setContent(html_24557fcc41c044099123f906edd1467f);
+        
+
+        circle_marker_c9a3eb133a394d99b5824a05859ca3c6.bindPopup(popup_a24efb4e982a4ebdbee9ed5535aec275)
+        ;
+
+        
+    
+    
+            var circle_marker_10a568bcad384f04889d774c9755dae0 = L.circleMarker(
+                [41.9828479, -87.72844289999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_aebb37f1c1fe446991a0f36ce05e8fc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d849ce90c9574299be48d7394812169e = $(`<div id="html_d849ce90c9574299be48d7394812169e" style="width: 100.0%; height: 100.0%;">North Park, Rent $1229, Cluster 3</div>`)[0];
+            popup_aebb37f1c1fe446991a0f36ce05e8fc8.setContent(html_d849ce90c9574299be48d7394812169e);
+        
+
+        circle_marker_10a568bcad384f04889d774c9755dae0.bindPopup(popup_aebb37f1c1fe446991a0f36ce05e8fc8)
+        ;
+
+        
+    
+    
+            var circle_marker_e5772b279975477d87ba93e666977710 = L.circleMarker(
+                [41.8226995, -87.60135679999999],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_2338a2549a424e63ace7ba0db5f34e5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67ab2e4eb29842b28004e539b845ae37 = $(`<div id="html_67ab2e4eb29842b28004e539b845ae37" style="width: 100.0%; height: 100.0%;">Oakland, Rent $1202, Cluster 1</div>`)[0];
+            popup_2338a2549a424e63ace7ba0db5f34e5c.setContent(html_67ab2e4eb29842b28004e539b845ae37);
+        
+
+        circle_marker_e5772b279975477d87ba93e666977710.bindPopup(popup_2338a2549a424e63ace7ba0db5f34e5c)
+        ;
+
+        
+    
+    
+            var circle_marker_16e8f121fd174b01a20f4d95ce630a97 = L.circleMarker(
+                [41.9772983, -87.8368909],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_e694b67188a84eebb19df4b266acb80c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81d72b70fe344f248c90406df6a82729 = $(`<div id="html_81d72b70fe344f248c90406df6a82729" style="width: 100.0%; height: 100.0%;">O&#39;Hare, Rent $1351, Cluster 1</div>`)[0];
+            popup_e694b67188a84eebb19df4b266acb80c.setContent(html_81d72b70fe344f248c90406df6a82729);
+        
+
+        circle_marker_16e8f121fd174b01a20f4d95ce630a97.bindPopup(popup_e694b67188a84eebb19df4b266acb80c)
+        ;
+
+        
+    
+    
+            var circle_marker_9757d7c3fe0e4fff8b0f685de6a6d810 = L.circleMarker(
+                [41.9110773, -87.6410116],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_e0f4d705b96e47bda5dd9e58f2bdf3a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce719db7245247d9b94cecf0f5be2b21 = $(`<div id="html_ce719db7245247d9b94cecf0f5be2b21" style="width: 100.0%; height: 100.0%;">Old Town, Rent $2118, Cluster 2</div>`)[0];
+            popup_e0f4d705b96e47bda5dd9e58f2bdf3a5.setContent(html_ce719db7245247d9b94cecf0f5be2b21);
+        
+
+        circle_marker_9757d7c3fe0e4fff8b0f685de6a6d810.bindPopup(popup_e0f4d705b96e47bda5dd9e58f2bdf3a5)
+        ;
+
+        
+    
+    
+            var circle_marker_7e90b986512e4361a44eb0a0665a11ee = L.circleMarker(
+                [41.9761141, -87.8169157],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_77c8f4755a33408ba0ac5c1e8d21107b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60373cf3c7c547f6b85a3495d6d09357 = $(`<div id="html_60373cf3c7c547f6b85a3495d6d09357" style="width: 100.0%; height: 100.0%;">Oriole Park, Rent $1331, Cluster 3</div>`)[0];
+            popup_77c8f4755a33408ba0ac5c1e8d21107b.setContent(html_60373cf3c7c547f6b85a3495d6d09357);
+        
+
+        circle_marker_7e90b986512e4361a44eb0a0665a11ee.bindPopup(popup_77c8f4755a33408ba0ac5c1e8d21107b)
+        ;
+
+        
+    
+    
+            var circle_marker_af88f1a1d44b4fecb9d40629c0c6c579 = L.circleMarker(
+                [41.9210705, -87.70048229999999],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6ccf55ec94264acbaf268b80f51adc24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3488d2de595347b0a59c0e708bc08b3c = $(`<div id="html_3488d2de595347b0a59c0e708bc08b3c" style="width: 100.0%; height: 100.0%;">Palmer Square, Rent $1785, Cluster 6</div>`)[0];
+            popup_6ccf55ec94264acbaf268b80f51adc24.setContent(html_3488d2de595347b0a59c0e708bc08b3c);
+        
+
+        circle_marker_af88f1a1d44b4fecb9d40629c0c6c579.bindPopup(popup_6ccf55ec94264acbaf268b80f51adc24)
+        ;
+
+        
+    
+    
+            var circle_marker_5b96a0f796ad4462b4863a9f50ce8a2f = L.circleMarker(
+                [41.7656921, -87.61525089999999],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6bdc6c12af9843abb3e30e4a0e4aa307 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd00df0d9c754e36b62417e132c2a093 = $(`<div id="html_fd00df0d9c754e36b62417e132c2a093" style="width: 100.0%; height: 100.0%;">Park Manor, Rent $1094, Cluster 4</div>`)[0];
+            popup_6bdc6c12af9843abb3e30e4a0e4aa307.setContent(html_fd00df0d9c754e36b62417e132c2a093);
+        
+
+        circle_marker_5b96a0f796ad4462b4863a9f50ce8a2f.bindPopup(popup_6bdc6c12af9843abb3e30e4a0e4aa307)
+        ;
+
+        
+    
+    
+            var circle_marker_7bad78ef2aa84c308753a16e6ce6bc20 = L.circleMarker(
+                [41.9289391, -87.64412659999999],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_2a326a1fe3c744788ab3e6be8b3f3e7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4039cdea67b54f3ba8513eed66a39ff9 = $(`<div id="html_4039cdea67b54f3ba8513eed66a39ff9" style="width: 100.0%; height: 100.0%;">Park West, Rent $1729, Cluster 6</div>`)[0];
+            popup_2a326a1fe3c744788ab3e6be8b3f3e7f.setContent(html_4039cdea67b54f3ba8513eed66a39ff9);
+        
+
+        circle_marker_7bad78ef2aa84c308753a16e6ce6bc20.bindPopup(popup_2a326a1fe3c744788ab3e6be8b3f3e7f)
+        ;
+
+        
+    
+    
+            var circle_marker_13e6679a85ae453698102ec49cd98c71 = L.circleMarker(
+                [41.9847536, -87.70371349999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_b4584e36197540338a5c2e5124500787 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cc4d15bb3c64833bb22b22f6bcdd22e = $(`<div id="html_5cc4d15bb3c64833bb22b22f6bcdd22e" style="width: 100.0%; height: 100.0%;">Peterson Park, Rent $1314, Cluster 3</div>`)[0];
+            popup_b4584e36197540338a5c2e5124500787.setContent(html_5cc4d15bb3c64833bb22b22f6bcdd22e);
+        
+
+        circle_marker_13e6679a85ae453698102ec49cd98c71.bindPopup(popup_b4584e36197540338a5c2e5124500787)
+        ;
+
+        
+    
+    
+            var circle_marker_5339e3a070ae4e2ab5dac95d1455b83f = L.circleMarker(
+                [41.8524902, -87.6562598],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_a2eb80309372442eae0142bfb0ecfb99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ba5701df5514fe8a41d4eeceb83fb9b = $(`<div id="html_1ba5701df5514fe8a41d4eeceb83fb9b" style="width: 100.0%; height: 100.0%;">Pilsen, Rent $959, Cluster 3</div>`)[0];
+            popup_a2eb80309372442eae0142bfb0ecfb99.setContent(html_1ba5701df5514fe8a41d4eeceb83fb9b);
+        
+
+        circle_marker_5339e3a070ae4e2ab5dac95d1455b83f.bindPopup(popup_a2eb80309372442eae0142bfb0ecfb99)
+        ;
+
+        
+    
+    
+            var circle_marker_b356e082203940edb9e4453683cfb05c = L.circleMarker(
+                [41.953217, -87.76455759999999],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_09a34af642b44f24ac2a7b51ec415e67 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c09781a3b9494c59935600f8de425664 = $(`<div id="html_c09781a3b9494c59935600f8de425664" style="width: 100.0%; height: 100.0%;">Portage Park, Rent $1675, Cluster 6</div>`)[0];
+            popup_09a34af642b44f24ac2a7b51ec415e67.setContent(html_c09781a3b9494c59935600f8de425664);
+        
+
+        circle_marker_b356e082203940edb9e4453683cfb05c.bindPopup(popup_09a34af642b44f24ac2a7b51ec415e67)
+        ;
+
+        
+    
+    
+            var circle_marker_150186a3e6af462395a8be261f7f1dd9 = L.circleMarker(
+                [41.85765869999999, -87.62265939999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_70cbaa6342f047be85dbe67ad5c5132d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1bd44ec4df347e7b74e5c8655f847a6 = $(`<div id="html_f1bd44ec4df347e7b74e5c8655f847a6" style="width: 100.0%; height: 100.0%;">Prairie Avenue Historic District, Rent $1437, Cluster 3</div>`)[0];
+            popup_70cbaa6342f047be85dbe67ad5c5132d.setContent(html_f1bd44ec4df347e7b74e5c8655f847a6);
+        
+
+        circle_marker_150186a3e6af462395a8be261f7f1dd9.bindPopup(popup_70cbaa6342f047be85dbe67ad5c5132d)
+        ;
+
+        
+    
+    
+            var circle_marker_7e9d4d7d83d94d4eb5c1ef1b849d7cea = L.circleMarker(
+                [41.8423119, -87.61491079999999],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_742122a5802a46f9b583433665ed19e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1a7086ae00e4ff49e7588bf43941e76 = $(`<div id="html_b1a7086ae00e4ff49e7588bf43941e76" style="width: 100.0%; height: 100.0%;">Prairie Shores, Rent $1437, Cluster 1</div>`)[0];
+            popup_742122a5802a46f9b583433665ed19e4.setContent(html_b1a7086ae00e4ff49e7588bf43941e76);
+        
+
+        circle_marker_7e9d4d7d83d94d4eb5c1ef1b849d7cea.bindPopup(popup_742122a5802a46f9b583433665ed19e4)
+        ;
+
+        
+    
+    
+            var circle_marker_5362a7862bd0446d9a13fd7e16d33703 = L.circleMarker(
+                [41.72639640000001, -87.6309224],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_35763621045f4208ac954b02551802f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87c0620dcc054fe3819a9ac4d9114aac = $(`<div id="html_87c0620dcc054fe3819a9ac4d9114aac" style="width: 100.0%; height: 100.0%;">Princeton Park, Rent $891, Cluster 0</div>`)[0];
+            popup_35763621045f4208ac954b02551802f5.setContent(html_87c0620dcc054fe3819a9ac4d9114aac);
+        
+
+        circle_marker_5362a7862bd0446d9a13fd7e16d33703.bindPopup(popup_35763621045f4208ac954b02551802f5)
+        ;
+
+        
+    
+    
+            var circle_marker_8000353112c34e98bc7b1f7b21b2fb54 = L.circleMarker(
+                [41.8737868, -87.6288996],
+                {"bubblingMouseEvents": true, "color": "#e377c2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e377c2", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_4967ebd6381b4912a2bf557ba022ccb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0b90cc3266e406cab1ccebe5ed3b755 = $(`<div id="html_e0b90cc3266e406cab1ccebe5ed3b755" style="width: 100.0%; height: 100.0%;">Printer&#39;s Row, Rent $2419, Cluster 5</div>`)[0];
+            popup_4967ebd6381b4912a2bf557ba022ccb8.setContent(html_e0b90cc3266e406cab1ccebe5ed3b755);
+        
+
+        circle_marker_8000353112c34e98bc7b1f7b21b2fb54.bindPopup(popup_4967ebd6381b4912a2bf557ba022ccb8)
+        ;
+
+        
+    
+    
+            var circle_marker_d525f450c37e4d83ad568c4297bba2c1 = L.circleMarker(
+                [41.9051078, -87.6624135],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_197440db7b224d7d8fa50275238d87da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1576257f0ec64c4181df1a1bc814c21c = $(`<div id="html_1576257f0ec64c4181df1a1bc814c21c" style="width: 100.0%; height: 100.0%;">Pulaski Park, Rent $1314, Cluster 3</div>`)[0];
+            popup_197440db7b224d7d8fa50275238d87da.setContent(html_1576257f0ec64c4181df1a1bc814c21c);
+        
+
+        circle_marker_d525f450c37e4d83ad568c4297bba2c1.bindPopup(popup_197440db7b224d7d8fa50275238d87da)
+        ;
+
+        
+    
+    
+            var circle_marker_fecba14459e5435ea4cadc3d2b195fa1 = L.circleMarker(
+                [41.7076167, -87.594188],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_b0265c97bcdf44e19a1a3decc10ef397 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_809eeab3ce144912b29ba4ea26e53aa2 = $(`<div id="html_809eeab3ce144912b29ba4ea26e53aa2" style="width: 100.0%; height: 100.0%;">Pullman, Rent $891, Cluster 0</div>`)[0];
+            popup_b0265c97bcdf44e19a1a3decc10ef397.setContent(html_809eeab3ce144912b29ba4ea26e53aa2);
+        
+
+        circle_marker_fecba14459e5435ea4cadc3d2b195fa1.bindPopup(popup_b0265c97bcdf44e19a1a3decc10ef397)
+        ;
+
+        
+    
+    
+            var circle_marker_5f8c313728114a449e14bb16a796bbbe = L.circleMarker(
+                [41.9151277, -87.6528359],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_59c0b2f358964571ba2724200bf7adc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d689a5f9bc8d4b1cb5a4c591718ffd6a = $(`<div id="html_d689a5f9bc8d4b1cb5a4c591718ffd6a" style="width: 100.0%; height: 100.0%;">Ranch Triangle, Rent $1825, Cluster 6</div>`)[0];
+            popup_59c0b2f358964571ba2724200bf7adc2.setContent(html_d689a5f9bc8d4b1cb5a4c591718ffd6a);
+        
+
+        circle_marker_5f8c313728114a449e14bb16a796bbbe.bindPopup(popup_59c0b2f358964571ba2724200bf7adc2)
+        ;
+
+        
+    
+    
+            var circle_marker_df06671e11b74a8ba932b31a153a3cc7 = L.circleMarker(
+                [41.9688072, -87.6791713],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_78b653ef24934d7a906d26799bdf9aac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26da2d80aacd468d9602445425713dfd = $(`<div id="html_26da2d80aacd468d9602445425713dfd" style="width: 100.0%; height: 100.0%;">Ravenswood, Rent $1239, Cluster 3</div>`)[0];
+            popup_78b653ef24934d7a906d26799bdf9aac.setContent(html_26da2d80aacd468d9602445425713dfd);
+        
+
+        circle_marker_df06671e11b74a8ba932b31a153a3cc7.bindPopup(popup_78b653ef24934d7a906d26799bdf9aac)
+        ;
+
+        
+    
+    
+            var circle_marker_6d5d5d8c13f04b339dd080019af7bc7a = L.circleMarker(
+                [41.9647413, -87.69385779999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_c763fd4a6db545c39c474974cd470f43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_519a652b11ca47fb937f1889950eb30c = $(`<div id="html_519a652b11ca47fb937f1889950eb30c" style="width: 100.0%; height: 100.0%;">Ravenswood Gardens, Rent $1210, Cluster 3</div>`)[0];
+            popup_c763fd4a6db545c39c474974cd470f43.setContent(html_519a652b11ca47fb937f1889950eb30c);
+        
+
+        circle_marker_6d5d5d8c13f04b339dd080019af7bc7a.bindPopup(popup_c763fd4a6db545c39c474974cd470f43)
+        ;
+
+        
+    
+    
+            var circle_marker_2dcd3fc045bc4c529e85ccd9d34857fd = L.circleMarker(
+                [41.9648891, -87.7012498],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_9545626be7874c70941ebb9b1d9b8ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d24359dbb3a49568a78bffe5e17e9c2 = $(`<div id="html_8d24359dbb3a49568a78bffe5e17e9c2" style="width: 100.0%; height: 100.0%;">Ravenswood Manor, Rent $1210, Cluster 3</div>`)[0];
+            popup_9545626be7874c70941ebb9b1d9b8ef1.setContent(html_8d24359dbb3a49568a78bffe5e17e9c2);
+        
+
+        circle_marker_2dcd3fc045bc4c529e85ccd9d34857fd.bindPopup(popup_9545626be7874c70941ebb9b1d9b8ef1)
+        ;
+
+        
+    
+    
+            var circle_marker_2e516efa738e433985503d0b350cc255 = L.circleMarker(
+                [41.89238479999999, -87.6340749],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_35304dbba91646bcb015381e8aeb2d14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_990e06089e07480a957602585e4107a5 = $(`<div id="html_990e06089e07480a957602585e4107a5" style="width: 100.0%; height: 100.0%;">River North, Rent $2308, Cluster 2</div>`)[0];
+            popup_35304dbba91646bcb015381e8aeb2d14.setContent(html_990e06089e07480a957602585e4107a5);
+        
+
+        circle_marker_2e516efa738e433985503d0b350cc255.bindPopup(popup_35304dbba91646bcb015381e8aeb2d14)
+        ;
+
+        
+    
+    
+            var circle_marker_4d0a0981e74d446893a53c0a4c6bfd00 = L.circleMarker(
+                [41.8944333, -87.64948079999999],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_81c6921f85ee4d0692e7e3fb2f8423c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4910badaa9d2471882ac1cd697e10ff0 = $(`<div id="html_4910badaa9d2471882ac1cd697e10ff0" style="width: 100.0%; height: 100.0%;">River West, Rent $2294, Cluster 2</div>`)[0];
+            popup_81c6921f85ee4d0692e7e3fb2f8423c0.setContent(html_4910badaa9d2471882ac1cd697e10ff0);
+        
+
+        circle_marker_4d0a0981e74d446893a53c0a4c6bfd00.bindPopup(popup_81c6921f85ee4d0692e7e3fb2f8423c0)
+        ;
+
+        
+    
+    
+            var circle_marker_e4290c0fa20a4a82a7e40ab40f084ba8 = L.circleMarker(
+                [41.9782524, -87.7373199],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_5b6d4fa0a11344cf813739af24ee0f44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b44ff4355d704da9989b2dadff799d71 = $(`<div id="html_b44ff4355d704da9989b2dadff799d71" style="width: 100.0%; height: 100.0%;">River&#39;s Edge, Rent $1349, Cluster 3</div>`)[0];
+            popup_5b6d4fa0a11344cf813739af24ee0f44.setContent(html_b44ff4355d704da9989b2dadff799d71);
+        
+
+        circle_marker_e4290c0fa20a4a82a7e40ab40f084ba8.bindPopup(popup_5b6d4fa0a11344cf813739af24ee0f44)
+        ;
+
+        
+    
+    
+            var circle_marker_59129e6ab2124a009fff5f918883fe8e = L.circleMarker(
+                [41.6610903, -87.60380479999999],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_428e0b0854e74c71bf0ee796fcec9f58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_110cefd9ee474cacafc29aad280c61cd = $(`<div id="html_110cefd9ee474cacafc29aad280c61cd" style="width: 100.0%; height: 100.0%;">Riverdale, Rent $891, Cluster 4</div>`)[0];
+            popup_428e0b0854e74c71bf0ee796fcec9f58.setContent(html_110cefd9ee474cacafc29aad280c61cd);
+        
+
+        circle_marker_59129e6ab2124a009fff5f918883fe8e.bindPopup(popup_428e0b0854e74c71bf0ee796fcec9f58)
+        ;
+
+        
+    
+    
+            var circle_marker_8489b5f13b164b8fadf8cc7aca17344e = L.circleMarker(
+                [42.0126294, -87.6745883],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_3e25a08ceb7842989bc2bfe05ffe4c74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f68d9785907041b9bb361f93c8b3601d = $(`<div id="html_f68d9785907041b9bb361f93c8b3601d" style="width: 100.0%; height: 100.0%;">Rogers Park, Rent $1194, Cluster 3</div>`)[0];
+            popup_3e25a08ceb7842989bc2bfe05ffe4c74.setContent(html_f68d9785907041b9bb361f93c8b3601d);
+        
+
+        circle_marker_8489b5f13b164b8fadf8cc7aca17344e.bindPopup(popup_3e25a08ceb7842989bc2bfe05ffe4c74)
+        ;
+
+        
+    
+    
+            var circle_marker_d38ebd916d9549e98f4a7500f7c3ed07 = L.circleMarker(
+                [41.94323319999999, -87.6784687],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_79fd5c3decc341caaec7b5f7066e641a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2b74cd6a98846c1a94ad33e7df19ef3 = $(`<div id="html_f2b74cd6a98846c1a94ad33e7df19ef3" style="width: 100.0%; height: 100.0%;">Roscoe Village, Rent $1645, Cluster 6</div>`)[0];
+            popup_79fd5c3decc341caaec7b5f7066e641a.setContent(html_f2b74cd6a98846c1a94ad33e7df19ef3);
+        
+
+        circle_marker_d38ebd916d9549e98f4a7500f7c3ed07.bindPopup(popup_79fd5c3decc341caaec7b5f7066e641a)
+        ;
+
+        
+    
+    
+            var circle_marker_44ee329478994863bc740abc6602eef1 = L.circleMarker(
+                [41.71083369999999, -87.62358329999999],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_538ee631ba1444cdbca8d42b253b0823 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c62cbb8c9314297a3a60f3673fb437f = $(`<div id="html_9c62cbb8c9314297a3a60f3673fb437f" style="width: 100.0%; height: 100.0%;">Roseland, Rent $891, Cluster 0</div>`)[0];
+            popup_538ee631ba1444cdbca8d42b253b0823.setContent(html_9c62cbb8c9314297a3a60f3673fb437f);
+        
+
+        circle_marker_44ee329478994863bc740abc6602eef1.bindPopup(popup_538ee631ba1444cdbca8d42b253b0823)
+        ;
+
+        
+    
+    
+            var circle_marker_1e6416e682ad4fe1aa64dc454ad05fcc = L.circleMarker(
+                [41.7109788, -87.61386999999999],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_ac29c19eac594ef8984061b7a9a81f61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d780ec19ca1e4f529e2119db8a7bb33a = $(`<div id="html_d780ec19ca1e4f529e2119db8a7bb33a" style="width: 100.0%; height: 100.0%;">Rosemoor, Rent $891, Cluster 0</div>`)[0];
+            popup_ac29c19eac594ef8984061b7a9a81f61.setContent(html_d780ec19ca1e4f529e2119db8a7bb33a);
+        
+
+        circle_marker_1e6416e682ad4fe1aa64dc454ad05fcc.bindPopup(popup_ac29c19eac594ef8984061b7a9a81f61)
+        ;
+
+        
+    
+    
+            var circle_marker_c66222826a0a445fbfbbc9980168eb54 = L.circleMarker(
+                [41.9496772, -87.684],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_0153d6d4840b4e6da31c960c2c3915b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b9dddfa0e1f4a4c85dff4247b0cdd4d = $(`<div id="html_9b9dddfa0e1f4a4c85dff4247b0cdd4d" style="width: 100.0%; height: 100.0%;">Saint Ben&#39;s, Rent $1102, Cluster 3</div>`)[0];
+            popup_0153d6d4840b4e6da31c960c2c3915b4.setContent(html_9b9dddfa0e1f4a4c85dff4247b0cdd4d);
+        
+
+        circle_marker_c66222826a0a445fbfbbc9980168eb54.bindPopup(popup_0153d6d4840b4e6da31c960c2c3915b4)
+        ;
+
+        
+    
+    
+            var circle_marker_0982cf35dcb54239a1dc601debfd0aec = L.circleMarker(
+                [41.9899768, -87.7425332],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_7e80743f50b443409f11713e6d0596c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a65c88ba45e45e3b912aea7d0c5ce55 = $(`<div id="html_1a65c88ba45e45e3b912aea7d0c5ce55" style="width: 100.0%; height: 100.0%;">Sauganash, Rent $1349, Cluster 3</div>`)[0];
+            popup_7e80743f50b443409f11713e6d0596c6.setContent(html_1a65c88ba45e45e3b912aea7d0c5ce55);
+        
+
+        circle_marker_0982cf35dcb54239a1dc601debfd0aec.bindPopup(popup_7e80743f50b443409f11713e6d0596c6)
+        ;
+
+        
+    
+    
+            var circle_marker_dc81557191c54e59b252a309fe4aa1f1 = L.circleMarker(
+                [41.9626472, -87.8414686],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_058e2f9003a84e4f8310f4574aa0e867 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2b78697558645cea51999044df44fc7 = $(`<div id="html_d2b78697558645cea51999044df44fc7" style="width: 100.0%; height: 100.0%;">Schorsch Forest View, Rent $1331, Cluster 1</div>`)[0];
+            popup_058e2f9003a84e4f8310f4574aa0e867.setContent(html_d2b78697558645cea51999044df44fc7);
+        
+
+        circle_marker_dc81557191c54e59b252a309fe4aa1f1.bindPopup(popup_058e2f9003a84e4f8310f4574aa0e867)
+        ;
+
+        
+    
+    
+            var circle_marker_275074ae1f454e5ab0ee99c89fd3732b = L.circleMarker(
+                [41.9418585, -87.7946286],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_69e3553e84fc45c988555b0a259a81e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1d69379266a4341b95e8c565edb06de = $(`<div id="html_f1d69379266a4341b95e8c565edb06de" style="width: 100.0%; height: 100.0%;">Schorsch Village, Rent $1675, Cluster 6</div>`)[0];
+            popup_69e3553e84fc45c988555b0a259a81e6.setContent(html_f1d69379266a4341b95e8c565edb06de);
+        
+
+        circle_marker_275074ae1f454e5ab0ee99c89fd3732b.bindPopup(popup_69e3553e84fc45c988555b0a259a81e6)
+        ;
+
+        
+    
+    
+            var circle_marker_b39aca19607040e6a82017e212aff88f = L.circleMarker(
+                [41.9216605, -87.65833750000002],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_4b3aeaed9ccd40938ed4953a428cc1c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bd15d9110c1419f8ffd0be6141778f6 = $(`<div id="html_6bd15d9110c1419f8ffd0be6141778f6" style="width: 100.0%; height: 100.0%;">Sheffield Neighbors, Rent $1825, Cluster 6</div>`)[0];
+            popup_4b3aeaed9ccd40938ed4953a428cc1c7.setContent(html_6bd15d9110c1419f8ffd0be6141778f6);
+        
+
+        circle_marker_b39aca19607040e6a82017e212aff88f.bindPopup(popup_4b3aeaed9ccd40938ed4953a428cc1c7)
+        ;
+
+        
+    
+    
+            var circle_marker_2ff291a2558d4247839cae8f060c3d3c = L.circleMarker(
+                [41.9655201, -87.6629672],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_1c9204c03cea498e981d4486cf0f2111 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e341ebf8662546af9155796c8bda1fd8 = $(`<div id="html_e341ebf8662546af9155796c8bda1fd8" style="width: 100.0%; height: 100.0%;">Sheridan Park, Rent $1241, Cluster 3</div>`)[0];
+            popup_1c9204c03cea498e981d4486cf0f2111.setContent(html_e341ebf8662546af9155796c8bda1fd8);
+        
+
+        circle_marker_2ff291a2558d4247839cae8f060c3d3c.bindPopup(popup_1c9204c03cea498e981d4486cf0f2111)
+        ;
+
+        
+    
+    
+            var circle_marker_f1a8a1ec0c9242b99497e2175b8c30af = L.circleMarker(
+                [41.8933833, -87.68954529999999],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_7ef7b4bc99e54deaa493b0767250973d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d16e912855ee45c29491ae90c53a23b0 = $(`<div id="html_d16e912855ee45c29491ae90c53a23b0" style="width: 100.0%; height: 100.0%;">Smith Park, Rent $1936, Cluster 6</div>`)[0];
+            popup_7ef7b4bc99e54deaa493b0767250973d.setContent(html_d16e912855ee45c29491ae90c53a23b0);
+        
+
+        circle_marker_f1a8a1ec0c9242b99497e2175b8c30af.bindPopup(popup_7ef7b4bc99e54deaa493b0767250973d)
+        ;
+
+        
+    
+    
+            var circle_marker_4539238e6955482b9ed640814517a67d = L.circleMarker(
+                [41.8873118, -87.7603374],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_2d01c53a545c4522809d0e094da28b0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0e0601345084cda8da50feca58445e5 = $(`<div id="html_e0e0601345084cda8da50feca58445e5" style="width: 100.0%; height: 100.0%;">South Austin, Rent $728, Cluster 0</div>`)[0];
+            popup_2d01c53a545c4522809d0e094da28b0b.setContent(html_e0e0601345084cda8da50feca58445e5);
+        
+
+        circle_marker_4539238e6955482b9ed640814517a67d.bindPopup(popup_2d01c53a545c4522809d0e094da28b0b)
+        ;
+
+        
+    
+    
+            var circle_marker_9c86abaafbf8489dbade2b06d51858c5 = L.circleMarker(
+                [41.8421825, -87.6203371],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_197a5a9715974112b921ab96bd07177e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef0757edc994447e97ea86191f49963f = $(`<div id="html_ef0757edc994447e97ea86191f49963f" style="width: 100.0%; height: 100.0%;">South Commons, Rent $1437, Cluster 1</div>`)[0];
+            popup_197a5a9715974112b921ab96bd07177e.setContent(html_ef0757edc994447e97ea86191f49963f);
+        
+
+        circle_marker_9c86abaafbf8489dbade2b06d51858c5.bindPopup(popup_197a5a9715974112b921ab96bd07177e)
+        ;
+
+        
+    
+    
+            var circle_marker_220360cf8e324007b25d47b33a8dda03 = L.circleMarker(
+                [41.8674081, -87.6275005],
+                {"bubblingMouseEvents": true, "color": "#e377c2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e377c2", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_7c5f6052c0eb4e46b4855562af09fd19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0674e0b65cb43ce8cc7aac807f91532 = $(`<div id="html_e0674e0b65cb43ce8cc7aac807f91532" style="width: 100.0%; height: 100.0%;">South Loop, Rent $2079, Cluster 5</div>`)[0];
+            popup_7c5f6052c0eb4e46b4855562af09fd19.setContent(html_e0674e0b65cb43ce8cc7aac807f91532);
+        
+
+        circle_marker_220360cf8e324007b25d47b33a8dda03.bindPopup(popup_7c5f6052c0eb4e46b4855562af09fd19)
+        ;
+
+        
+    
+    
+            var circle_marker_65f929005dc849dc962c720a53f80a10 = L.circleMarker(
+                [41.7589929, -87.5700257],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_f8e25b39b1a84d2ba3faed78293edb34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb29912f83444614a65947262e52b9a2 = $(`<div id="html_bb29912f83444614a65947262e52b9a2" style="width: 100.0%; height: 100.0%;">South Shore, Rent $1047, Cluster 0</div>`)[0];
+            popup_f8e25b39b1a84d2ba3faed78293edb34.setContent(html_bb29912f83444614a65947262e52b9a2);
+        
+
+        circle_marker_65f929005dc849dc962c720a53f80a10.bindPopup(popup_f8e25b39b1a84d2ba3faed78293edb34)
+        ;
+
+        
+    
+    
+            var circle_marker_7559387e3d1e4c9abc4ace09ed4e0883 = L.circleMarker(
+                [41.8274563, -87.6284237],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_472def3ca623476eb815243e193aab3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a5654d8fac04dce8f52a25af98ceff4 = $(`<div id="html_3a5654d8fac04dce8f52a25af98ceff4" style="width: 100.0%; height: 100.0%;">Stateway Gardens, Rent $1200, Cluster 1</div>`)[0];
+            popup_472def3ca623476eb815243e193aab3a.setContent(html_3a5654d8fac04dce8f52a25af98ceff4);
+        
+
+        circle_marker_7559387e3d1e4c9abc4ace09ed4e0883.bindPopup(popup_472def3ca623476eb815243e193aab3a)
+        ;
+
+        
+    
+    
+            var circle_marker_8d365d04ea714e2387d00f71dc3f0407 = L.circleMarker(
+                [41.8927362, -87.6200416],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_0fdf997b268441a3a7cfb0aaee4d7d63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ed5fca185484f3ca584abbc5dc789f3 = $(`<div id="html_5ed5fca185484f3ca584abbc5dc789f3" style="width: 100.0%; height: 100.0%;">Streeterville, Rent $2410, Cluster 2</div>`)[0];
+            popup_0fdf997b268441a3a7cfb0aaee4d7d63.setContent(html_5ed5fca185484f3ca584abbc5dc789f3);
+        
+
+        circle_marker_8d365d04ea714e2387d00f71dc3f0407.bindPopup(popup_0fdf997b268441a3a7cfb0aaee4d7d63)
+        ;
+
+        
+    
+    
+            var circle_marker_b14c5b5f136b4337922ac4cc9f3b21ab = L.circleMarker(
+                [41.7089271, -87.7152605],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_24b243137c9d49999dd54800fc26cb82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d7c6ea6fe5d4d4b9efcd8c51595cafa = $(`<div id="html_4d7c6ea6fe5d4d4b9efcd8c51595cafa" style="width: 100.0%; height: 100.0%;">Talley&#39;s Corner, Rent $1317, Cluster 3</div>`)[0];
+            popup_24b243137c9d49999dd54800fc26cb82.setContent(html_4d7c6ea6fe5d4d4b9efcd8c51595cafa);
+        
+
+        circle_marker_b14c5b5f136b4337922ac4cc9f3b21ab.bindPopup(popup_24b243137c9d49999dd54800fc26cb82)
+        ;
+
+        
+    
+    
+            var circle_marker_b04fe8657fca49a2b5ff460e5ebb2182 = L.circleMarker(
+                [41.8713761, -87.6837082],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_f49013b38644422f9b28abe67a9311c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edcfafb3b6024cea868a4dddbfb48678 = $(`<div id="html_edcfafb3b6024cea868a4dddbfb48678" style="width: 100.0%; height: 100.0%;">Tri-Taylor, Rent $1526, Cluster 1</div>`)[0];
+            popup_f49013b38644422f9b28abe67a9311c7.setContent(html_edcfafb3b6024cea868a4dddbfb48678);
+        
+
+        circle_marker_b04fe8657fca49a2b5ff460e5ebb2182.bindPopup(popup_f49013b38644422f9b28abe67a9311c7)
+        ;
+
+        
+    
+    
+            var circle_marker_4882ecd6ceac4b8e9dbfa5a0a79135e7 = L.circleMarker(
+                [41.8994127, -87.68448509999999],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_81ee5e667d554286a61cbbf6e8895dd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67a623abae114d37a5afc3d6e157f04e = $(`<div id="html_67a623abae114d37a5afc3d6e157f04e" style="width: 100.0%; height: 100.0%;">Ukrainian Village, Rent $2261, Cluster 2</div>`)[0];
+            popup_81ee5e667d554286a61cbbf6e8895dd6.setContent(html_67a623abae114d37a5afc3d6e157f04e);
+        
+
+        circle_marker_4882ecd6ceac4b8e9dbfa5a0a79135e7.bindPopup(popup_81ee5e667d554286a61cbbf6e8895dd6)
+        ;
+
+        
+    
+    
+            var circle_marker_055fe99cc1124dfe95e774e7e9bd1674 = L.circleMarker(
+                [41.97907379999999, -87.79749559999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_bf23ec665404471aaaadd2fafaeb5103 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccea1c7dac2b47e8a9c628e82b7c38c6 = $(`<div id="html_ccea1c7dac2b47e8a9c628e82b7c38c6" style="width: 100.0%; height: 100.0%;">Union Ridge, Rent $1331, Cluster 3</div>`)[0];
+            popup_bf23ec665404471aaaadd2fafaeb5103.setContent(html_ccea1c7dac2b47e8a9c628e82b7c38c6);
+        
+
+        circle_marker_055fe99cc1124dfe95e774e7e9bd1674.bindPopup(popup_bf23ec665404471aaaadd2fafaeb5103)
+        ;
+
+        
+    
+    
+            var circle_marker_551ee57955f841e3ab6537d2d011b260 = L.circleMarker(
+                [41.9665404, -87.6533404],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_091d1d4bd4c04414b1c3c0f1d472d155 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ab3e306e5f040279877bb934df087f6 = $(`<div id="html_3ab3e306e5f040279877bb934df087f6" style="width: 100.0%; height: 100.0%;">Uptown, Rent $1241, Cluster 3</div>`)[0];
+            popup_091d1d4bd4c04414b1c3c0f1d472d155.setContent(html_3ab3e306e5f040279877bb934df087f6);
+        
+
+        circle_marker_551ee57955f841e3ab6537d2d011b260.bindPopup(popup_091d1d4bd4c04414b1c3c0f1d472d155)
+        ;
+
+        
+    
+    
+            var circle_marker_4bb81812b2be47f18fe30b13084f91bc = L.circleMarker(
+                [41.9480336, -87.725881],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_828c2ac4fe66412880c9f7cedf6b5445 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67c58b2ef1d544109f6da3df56194ec8 = $(`<div id="html_67c58b2ef1d544109f6da3df56194ec8" style="width: 100.0%; height: 100.0%;">The Villa, Rent $1102, Cluster 3</div>`)[0];
+            popup_828c2ac4fe66412880c9f7cedf6b5445.setContent(html_67c58b2ef1d544109f6da3df56194ec8);
+        
+
+        circle_marker_4bb81812b2be47f18fe30b13084f91bc.bindPopup(popup_828c2ac4fe66412880c9f7cedf6b5445)
+        ;
+
+        
+    
+    
+            var circle_marker_418a9dfcf0f041fdb777e1630435e7d1 = L.circleMarker(
+                [41.7944738, -87.615963],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_fc185b026ec944a099933a1b4f5f105c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fab3d604d58a4b00b95231f722e08234 = $(`<div id="html_fab3d604d58a4b00b95231f722e08234" style="width: 100.0%; height: 100.0%;">Washington Park, Rent $1431, Cluster 1</div>`)[0];
+            popup_fc185b026ec944a099933a1b4f5f105c.setContent(html_fab3d604d58a4b00b95231f722e08234);
+        
+
+        circle_marker_418a9dfcf0f041fdb777e1630435e7d1.bindPopup(popup_fc185b026ec944a099933a1b4f5f105c)
+        ;
+
+        
+    
+    
+            var circle_marker_5d80c2668f8d43949f30296497f7e6f2 = L.circleMarker(
+                [41.8252384, -87.63406189999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_8f15fe5761114e2a9e57e8ce11aa987f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6a54007b2c440b291485bb69b8b3bc1 = $(`<div id="html_a6a54007b2c440b291485bb69b8b3bc1" style="width: 100.0%; height: 100.0%;">Wentworth Gardens, Rent $1200, Cluster 3</div>`)[0];
+            popup_8f15fe5761114e2a9e57e8ce11aa987f.setContent(html_a6a54007b2c440b291485bb69b8b3bc1);
+        
+
+        circle_marker_5d80c2668f8d43949f30296497f7e6f2.bindPopup(popup_8f15fe5761114e2a9e57e8ce11aa987f)
+        ;
+
+        
+    
+    
+            var circle_marker_8bfe7a3e907148dc8bfb9f4ec27c384c = L.circleMarker(
+                [41.7056889, -87.6866751],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_d46a7c5c73c64047ad3a54dc35606785 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_108cf5fc74bf4a7789475995aa90b223 = $(`<div id="html_108cf5fc74bf4a7789475995aa90b223" style="width: 100.0%; height: 100.0%;">West Beverly, Rent $1317, Cluster 3</div>`)[0];
+            popup_d46a7c5c73c64047ad3a54dc35606785.setContent(html_108cf5fc74bf4a7789475995aa90b223);
+        
+
+        circle_marker_8bfe7a3e907148dc8bfb9f4ec27c384c.bindPopup(popup_d46a7c5c73c64047ad3a54dc35606785)
+        ;
+
+        
+    
+    
+            var circle_marker_63ae058d1c834e1a9620791eaeccba4f = L.circleMarker(
+                [41.7401204, -87.61463599999999],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_19c3f71d37434040b7f0a447fbb263a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1de05ebed972440992002e9b43ee9435 = $(`<div id="html_1de05ebed972440992002e9b43ee9435" style="width: 100.0%; height: 100.0%;">West Chatham, Rent $782, Cluster 4</div>`)[0];
+            popup_19c3f71d37434040b7f0a447fbb263a6.setContent(html_1de05ebed972440992002e9b43ee9435);
+        
+
+        circle_marker_63ae058d1c834e1a9620791eaeccba4f.bindPopup(popup_19c3f71d37434040b7f0a447fbb263a6)
+        ;
+
+        
+    
+    
+            var circle_marker_b161e2a9cbba49169efe76969f469d54 = L.circleMarker(
+                [41.729148, -87.6192042],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_f8ba9cc66dc9413eaec2298755cbd6e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b74c4c8451074926a984dadddbd472e1 = $(`<div id="html_b74c4c8451074926a984dadddbd472e1" style="width: 100.0%; height: 100.0%;">West Chesterfield, Rent $782, Cluster 0</div>`)[0];
+            popup_f8ba9cc66dc9413eaec2298755cbd6e2.setContent(html_b74c4c8451074926a984dadddbd472e1);
+        
+
+        circle_marker_b161e2a9cbba49169efe76969f469d54.bindPopup(popup_f8ba9cc66dc9413eaec2298755cbd6e2)
+        ;
+
+        
+    
+    
+            var circle_marker_a996bd61378b46aca36198dcb0752c03 = L.circleMarker(
+                [41.9290217, -87.6656217],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6ffad5ba13ee43dea5859e34ddcf3527 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6715a6e7d5bd4b768fe89c011f64519f = $(`<div id="html_6715a6e7d5bd4b768fe89c011f64519f" style="width: 100.0%; height: 100.0%;">West DePaul, Rent $1825, Cluster 6</div>`)[0];
+            popup_6ffad5ba13ee43dea5859e34ddcf3527.setContent(html_6715a6e7d5bd4b768fe89c011f64519f);
+        
+
+        circle_marker_a996bd61378b46aca36198dcb0752c03.bindPopup(popup_6ffad5ba13ee43dea5859e34ddcf3527)
+        ;
+
+        
+    
+    
+            var circle_marker_4d6f927efb2e44e28136852077ef5d4c = L.circleMarker(
+                [41.793219, -87.7231456],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_5af8ae199504417bb4df70eace244c20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3dc98b4c5c747079f318ca4520f23fe = $(`<div id="html_c3dc98b4c5c747079f318ca4520f23fe" style="width: 100.0%; height: 100.0%;">West Elsdon, Rent $1874, Cluster 6</div>`)[0];
+            popup_5af8ae199504417bb4df70eace244c20.setContent(html_c3dc98b4c5c747079f318ca4520f23fe);
+        
+
+        circle_marker_4d6f927efb2e44e28136852077ef5d4c.bindPopup(popup_5af8ae199504417bb4df70eace244c20)
+        ;
+
+        
+    
+    
+            var circle_marker_1d88df29990e4097bde2e11a361e3514 = L.circleMarker(
+                [41.8779353, -87.73048879999999],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_88935b4faf6241f68a446afea97fd582 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b0b7a2038dc48f5bebf0e5530da03d9 = $(`<div id="html_5b0b7a2038dc48f5bebf0e5530da03d9" style="width: 100.0%; height: 100.0%;">West Garfield Park, Rent $903, Cluster 4</div>`)[0];
+            popup_88935b4faf6241f68a446afea97fd582.setContent(html_5b0b7a2038dc48f5bebf0e5530da03d9);
+        
+
+        circle_marker_1d88df29990e4097bde2e11a361e3514.bindPopup(popup_88935b4faf6241f68a446afea97fd582)
+        ;
+
+        
+    
+    
+            var circle_marker_5ebf50c84b81458f9d28aaa39a37f2c5 = L.circleMarker(
+                [41.7786631, -87.7227942],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_3818587bd4ef4e76936ac5df6e55ac66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dd0c719860047af9739c36d2346af95 = $(`<div id="html_5dd0c719860047af9739c36d2346af95" style="width: 100.0%; height: 100.0%;">West Lawn, Rent $1874, Cluster 6</div>`)[0];
+            popup_3818587bd4ef4e76936ac5df6e55ac66.setContent(html_5dd0c719860047af9739c36d2346af95);
+        
+
+        circle_marker_5ebf50c84b81458f9d28aaa39a37f2c5.bindPopup(popup_3818587bd4ef4e76936ac5df6e55ac66)
+        ;
+
+        
+    
+    
+            var circle_marker_6cfd9a37e1564cd4ac10476b5ba0094b = L.circleMarker(
+                [41.8854407, -87.66273420000002],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_e898a35d5f3141e4b9b374924b8205ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91d413ff40b64557badbd815dd9d5410 = $(`<div id="html_91d413ff40b64557badbd815dd9d5410" style="width: 100.0%; height: 100.0%;">West Loop, Rent $2113, Cluster 2</div>`)[0];
+            popup_e898a35d5f3141e4b9b374924b8205ef.setContent(html_91d413ff40b64557badbd815dd9d5410);
+        
+
+        circle_marker_6cfd9a37e1564cd4ac10476b5ba0094b.bindPopup(popup_e898a35d5f3141e4b9b374924b8205ef)
+        ;
+
+        
+    
+    
+            var circle_marker_f03bea28cee548298fec7a8c66e0b6fb = L.circleMarker(
+                [41.6956426, -87.6860427],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_cdbdf2a2790c45f89e127857ad285fd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e44e89a03ef4ea69a9df437517a4514 = $(`<div id="html_6e44e89a03ef4ea69a9df437517a4514" style="width: 100.0%; height: 100.0%;">West Morgan Park, Rent $1317, Cluster 3</div>`)[0];
+            popup_cdbdf2a2790c45f89e127857ad285fd9.setContent(html_6e44e89a03ef4ea69a9df437517a4514);
+        
+
+        circle_marker_f03bea28cee548298fec7a8c66e0b6fb.bindPopup(popup_cdbdf2a2790c45f89e127857ad285fd9)
+        ;
+
+        
+    
+    
+            var circle_marker_db0c30e4095647c2b5cae8e26d768435 = L.circleMarker(
+                [41.6778514, -87.64195169999999],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_8fc6946e35f241f59846ed61a0d43c87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1bc03efdc5140b29d05440877ecc252 = $(`<div id="html_f1bc03efdc5140b29d05440877ecc252" style="width: 100.0%; height: 100.0%;">West Pullman, Rent $891, Cluster 0</div>`)[0];
+            popup_8fc6946e35f241f59846ed61a0d43c87.setContent(html_f1bc03efdc5140b29d05440877ecc252);
+        
+
+        circle_marker_db0c30e4095647c2b5cae8e26d768435.bindPopup(popup_8fc6946e35f241f59846ed61a0d43c87)
+        ;
+
+        
+    
+    
+            var circle_marker_549981c7eae64c4d8556545055c6cdf0 = L.circleMarker(
+                [42.0005804, -87.69257669999999],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_30d21839bbcf4a779eaeee068b76d637 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33c436c6f3a84a27a98b8f545ee31b82 = $(`<div id="html_33c436c6f3a84a27a98b8f545ee31b82" style="width: 100.0%; height: 100.0%;">West Rogers Park, Rent $1296, Cluster 3</div>`)[0];
+            popup_30d21839bbcf4a779eaeee068b76d637.setContent(html_33c436c6f3a84a27a98b8f545ee31b82);
+        
+
+        circle_marker_549981c7eae64c4d8556545055c6cdf0.bindPopup(popup_30d21839bbcf4a779eaeee068b76d637)
+        ;
+
+        
+    
+    
+            var circle_marker_2d5365fd66be49bd9221c1614d78c583 = L.circleMarker(
+                [41.8935946, -87.6721671],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_6a521aed8a7d4d179bfaa438646085c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9600910f62042dbb64c9caeb8952241 = $(`<div id="html_a9600910f62042dbb64c9caeb8952241" style="width: 100.0%; height: 100.0%;">West Town, Rent $2147, Cluster 2</div>`)[0];
+            popup_6a521aed8a7d4d179bfaa438646085c3.setContent(html_a9600910f62042dbb64c9caeb8952241);
+        
+
+        circle_marker_2d5365fd66be49bd9221c1614d78c583.bindPopup(popup_6a521aed8a7d4d179bfaa438646085c3)
+        ;
+
+        
+    
+    
+            var circle_marker_28966e97225b4bc7bfa5f8f2da3f5627 = L.circleMarker(
+                [41.7794339, -87.610586],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_1ef5fc7a950c4bcea401584fd43a10d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81602c73d2ff43e8961345b8821b1af7 = $(`<div id="html_81602c73d2ff43e8961345b8821b1af7" style="width: 100.0%; height: 100.0%;">West Woodlawn, Rent $1128, Cluster 0</div>`)[0];
+            popup_1ef5fc7a950c4bcea401584fd43a10d6.setContent(html_81602c73d2ff43e8961345b8821b1af7);
+        
+
+        circle_marker_28966e97225b4bc7bfa5f8f2da3f5627.bindPopup(popup_1ef5fc7a950c4bcea401584fd43a10d6)
+        ;
+
+        
+    
+    
+            var circle_marker_fda09a7ad29349358d1c48920dfe6caa = L.circleMarker(
+                [41.9104892, -87.6775672],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_f09b6db4465e4821a61f4026d27a1514 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf1bc1c081744d22b3d8c5dde4a6c17a = $(`<div id="html_cf1bc1c081744d22b3d8c5dde4a6c17a" style="width: 100.0%; height: 100.0%;">Wicker Park, Rent $2261, Cluster 2</div>`)[0];
+            popup_f09b6db4465e4821a61f4026d27a1514.setContent(html_cf1bc1c081744d22b3d8c5dde4a6c17a);
+        
+
+        circle_marker_fda09a7ad29349358d1c48920dfe6caa.bindPopup(popup_f09b6db4465e4821a61f4026d27a1514)
+        ;
+
+        
+    
+    
+            var circle_marker_8aef641bb53b4fdea84901226c23b0a5 = L.circleMarker(
+                [41.78058, -87.5915351],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_9f48ebf0c0a149f4ba825ec7403463bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48c812e26b21410c81c3567ce1da45ff = $(`<div id="html_48c812e26b21410c81c3567ce1da45ff" style="width: 100.0%; height: 100.0%;">Woodlawn, Rent $1081, Cluster 0</div>`)[0];
+            popup_9f48ebf0c0a149f4ba825ec7403463bb.setContent(html_48c812e26b21410c81c3567ce1da45ff);
+        
+
+        circle_marker_8aef641bb53b4fdea84901226c23b0a5.bindPopup(popup_9f48ebf0c0a149f4ba825ec7403463bb)
+        ;
+
+        
+    
+    
+            var circle_marker_de8c1336fe834acd90c39f304a529865 = L.circleMarker(
+                [41.7457436, -87.6912862],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_ae05d1003d704c748b96181d1291514f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8447c4659647412f9e612627753a62e4 = $(`<div id="html_8447c4659647412f9e612627753a62e4" style="width: 100.0%; height: 100.0%;">Wrightwood, Rent $1825, Cluster 6</div>`)[0];
+            popup_ae05d1003d704c748b96181d1291514f.setContent(html_8447c4659647412f9e612627753a62e4);
+        
+
+        circle_marker_de8c1336fe834acd90c39f304a529865.bindPopup(popup_ae05d1003d704c748b96181d1291514f)
+        ;
+
+        
+    
+    
+            var circle_marker_636f0c8d0aed4bf9a731584f19671ce7 = L.circleMarker(
+                [41.949062, -87.656516],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+        
+    
+        var popup_575fba3ad1e74e43927cf3b35af9adff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f012f851d1fd4080974955d9b79c52ea = $(`<div id="html_f012f851d1fd4080974955d9b79c52ea" style="width: 100.0%; height: 100.0%;">Wrigleyville, Rent $1584, Cluster 6</div>`)[0];
+            popup_575fba3ad1e74e43927cf3b35af9adff.setContent(html_f012f851d1fd4080974955d9b79c52ea);
+        
+
+        circle_marker_636f0c8d0aed4bf9a731584f19671ce7.bindPopup(popup_575fba3ad1e74e43927cf3b35af9adff)
+        ;
+
+        
+    
+    
+            var layer_control_c4bc8a53536641f4801bb0d5b96aac92 = {
+                base_layers : {
+                    "Light Map" : tile_layer_f77cf02da57945da9cef0a9e17af78b0,
+                    "OpenStreetMap" : tile_layer_7dbf56035e5c49258a5fc18e26986544,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_c4bc8a53536641f4801bb0d5b96aac92.base_layers,
+                layer_control_c4bc8a53536641f4801bb0d5b96aac92.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b9a8d04be74b4fd79d3d9cb113205dde);
+            tile_layer_7dbf56035e5c49258a5fc18e26986544.remove();
+        
+</script>
