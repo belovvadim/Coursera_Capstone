@@ -4,9 +4,20 @@ The IBM Data Science Capstone Project "The Battle of Neighborhoods"
 
 __*by Vadim Belov*__    
 
-This Applied Data Science Capstone project is part of the IBM Data Science Professional Certificate on Coursera
+# Table of Contents
 
-##  1. Introduction and description of the problem  
+1. [Introduction and Context](#introduction-and-context)  
+2. [Data Sources](#data-sources)  
+3. [Methodology and Details of Analysis](#methodology-and-details-of-analysis)  
+    - [Understanding Chicago's Geography](#understanding-chicagos-geography)  
+    - [Communities Crime Rate Using Chicago Data Portal](#communities-crime-rate-using-chicago-data-portal)  
+    - [Neighborhoods Average Rent](#neighborhoods-average-rent)  
+    - [Clustering Neighborhoods](#clustering-neighborhoods)  
+    - [Types of Venues](#types-of-venues)  
+4. [Results and Discussion](#results-and-discussion)  
+5. [Conclusion](#conclusion)  
+
+## Introduction and Context  
 
 Finding the right surrounding area to live, that fits your personality and preferences, can often feel like a challenge. It is especially difficult to choose among various locations when moving to a new city that you know little or nothing about. The decision should take into account a variety of factors (such as affordability, available infrastructure, transport, etc.), as well as evaluate possible risks. With so many different options to consider, how can one better weight all the possibilities and make the right choice? 
 
@@ -18,7 +29,7 @@ For this project, I would like to analyze the particular city of interest, using
 
 To answer each question, I am going to leverage open data sources to draw few general conclusions on the relative merits of different areas, that will help to make a better informed decision. Thus, the project is mostly exploratory in nature and, hopefully, can be useful to someone new to Chicago (like me), who plans to visit or even stay there in the future. Finding patterns in the venues among different neighborhoods, in general, can also provide valuable insights about locations to open new business.
 
-## 2. Data  
+## Data Sources 
 
 In accord with the above outline of the scope of planned analysis, I will combine various types of data, acquired from multiple available resources. 
 
@@ -30,9 +41,9 @@ In accord with the above outline of the scope of planned analysis, I will combin
 
 4. Finally, I will use the Foursquare API location data to obtain information on various categories of local venues for each neighborhood (using the collected coordinates).
 
-## 3. Methodology and detaiils of analysis  
+## Methodology and Details of Analysis  
 
-### 3.1 Understanding Chicago's Geography  
+### Understanding Chicago's Geography  
 
 As a first step, I figure out the territorial divisions of Chicago, that turn out to be quite complicated. This allows me to formulate data requirements precisely, organize different types of data, and conveniently represent them on the map. 
 
@@ -72,9 +83,9 @@ Finally, I fetch the coordinates of each neighborhood by its name, using the com
 
 With the obtained data, I then create an interactive overview map of Chicago, using the Folium library. This map is used to quickly look up the neighborhoods and community areas.
 
-![Chicago_Map](results\chicago_map.png "Chicago Community Areas and Neighborhoods")
+![Chicago_Map](results/chicago_map.png "Chicago Community Areas and Neighborhoods")
 
-### 3.2 Communities Crime Rate using Chicago Data Portal  
+### Communities Crime Rate Using Chicago Data Portal  
 
 To start exploring the city, it might be a good idea to understand the criminal situation in its various regions. Having this information can provide suggestions for which regions are most safe, and which are better to avoid, both whether you are tourist or planning to move. 
 
@@ -94,13 +105,13 @@ The overall frequency counts by area depends on the area size and population, an
 |            12 |           1145 |              18508 |    0.0618651 |
 |            55 |           1163 |               9426 |    0.123382  |
 
-![Crime_Bar](results\crime_barchart.png "Crime Statistics")
+![Crime_Bar](results/crime_barchart.png "Crime Statistics")
 
 I also put the crime rate on the map in order to see the aptial distribution by community areas.
 
-![Crime_Map](results\crime_map.png "Crime Map")
+![Crime_Map](results/crime_map.png "Crime Map")
 
-### 3.3 Neighborhoods Average Rent
+### Neighborhoods Average Rent
 
 Another important factor for someone who may plan to stay in Chicago for a longer period is the cost of living. In particular, how expensive is it to buy or rent an appartment in various parts of Chicago? Having in mind primarily a newcomer to the city, I am not considering housing prices, but instead focus on ranking various locations by typical rent. 
 
@@ -121,21 +132,21 @@ I found the relevant information on average rent by neighborhood on [RENTCafe](h
 |           2419 | Printer's Row                    | The Loop                            | Central       | recognized |    41.8738 |    -87.6289 |
 
 The rent prices are distributed as follows:
-![Rent_Hist](results\rent_distribution.png "Rent Price Distribution")
+![Rent_Hist](results/rent_distribution.png "Rent Price Distribution")
 
-### 3.4 Clustering Neighborhoods  
+### Clustering Neighborhoods  
 
 In principle, we could manually cut the rent prices into bins, in order to categorize neighborhoods into selceted price ranges. Instead, let's combine rent and crime data and see if we can identify similar groups of neighborhoods, using machine learning techniques. 
 
 I cluster the neighborhoods, based on crime and rent statistics, using the simple k-Means algorithm. Before training the model, one has to first normalize the data and specify the number of cluster. I perform the grid search and analyze the accuracy scores:
 
-![Optimal_k](results\optimal_k.png "Optimal k Search")
+![Optimal_k](results/optimal_k.png "Optimal k Search")
 
 Silhouette score varies from -1 to 1. A score value of 1 means the cluster is dense and well-separated from other clusters. A value near 0 represents overlapping clusters, data points are close to the decision boundary of neighboring clusters. A negative score indicates that the samples might have been assigned into the wrong clusters.
 
 The "elbow" on the left graph can be seen to be roughly at `k=3` but is not very pronounced. From the plot on the right, there is a relative peak in the silhoutte score also at `k=3`. For a more refined clustering, the value of `k=7` also seems to be a nice choice. Running first k-Means with `k=3` gives the following division neighborhoods into clusters on the map:
 
-![Clusters_3](results\clusters_3.png "Clustering with k=3")
+![Clusters_3](results/clusters_3.png "Clustering with k=3")
 
 In order to understand the cluster characteristics, I aggregate the mean values of average rent and crime rate:  
 
@@ -147,7 +158,7 @@ In order to understand the cluster characteristics, I aggregate the mean values 
 
 Clustering with `k=7` provides a more detailed picture:
 
-![Clesters_7](results\clusters_7.png "Clustering with k=7")
+![Clesters_7](results/clusters_7.png "Clustering with k=7")
 
 The structure of the clusters can be inferred from the following aggregated statistics as well:
 
@@ -161,7 +172,7 @@ The structure of the clusters can be inferred from the following aggregated stat
 |         5 |         0.57 |        2251.25 |
 |         6 |         0.12 |        1791.18 |
 
-### 5. Types of Venues  
+### Types of Venues  
 
 To gain insights into different types of neighborhoods, one can finally focus on the local infrastructure. Knowing available local facilities can certainly help making the right choice. Also within a given cluster, can we observe any patterns between neighborhoods in terms of local venues?
 
@@ -199,7 +210,7 @@ Finally, I am able to rank the venues by popularity for each neighborhood (e.g.,
 
 Running clustering, based on the types of venues, using "one hot encoding" is also possible, but does not lead to any meaningful results in our case.
 
-## 4. Results and discussion  
+## Results and Discussion  
 
 Based on available crime and population statistics, I campared different community areas be the calculated crime rate. It seems like the West Garfield Park have been the most crime-prone area, followed by Fuller Park and the Loop. **So I would probably recommend to be cautious visiting those areas found in the top 12!** One can visually recognize the most and least dangerous areas on the Choropleth map.
 
@@ -215,7 +226,7 @@ For each neighborhood, the list of most popular types of venues has been found, 
 
 Running k-Means clustering, based on types of venues, did not provide any discernible pattern. This is explainable, given that the whole idea of clustering is to identify similar items. In this case, the diversity within types of venues in each neighborhood is very high. One can find a wide variety of items nearby each place, and the obtained classification will often be not very telling. Some additional requirements must be met to further narrow down the search.
 
-## 5. Conclusion  
+## Conclusion  
 
 After performing exploratory and cluster analysis, I have determined the percentages of crime occurred, housing values, and types of venues in the city of Chicago. I have built interactive maps to visualize these analyses to help better determine the ideal neighborhood to move to. 
 
