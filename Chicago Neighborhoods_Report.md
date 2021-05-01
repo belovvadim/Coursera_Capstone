@@ -97,7 +97,7 @@ CDP provides a very detailed and (almost) up-to-date [crime statistics](https://
 
 The overall frequency counts by area depends on the area size and population, and therefore is not very representative. A better approach would be to combine it with the [population data](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Population-by-2010-Census-Block/5yjb-v3mj), which is available by small census blocks, organized into larger census tracts. To aggregate the required values by community areas, I have to use [tract boundaries](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Census-Tracts-2010/5jrd-6zik) to get a corresponding area number for each tract. Having done this, I obtain the following crime statistics and plot the results:
 
-|   area_number |   total_crimes |   TOTAL POPULATION |   crime_rate |
+|   area_number |   total_crimes |   total_population |   crime_rate |
 |--------------:|---------------:|-------------------:|-------------:|
 |             9 |            595 |              11187 |    0.0531867 |
 |            47 |            818 |               2916 |    0.280521  |
@@ -107,7 +107,7 @@ The overall frequency counts by area depends on the area size and population, an
 
 ![Crime_Bar](results/crime_barchart.png "Crime Statistics")
 
-I also put the crime rate on the map in order to see the aptial distribution by community areas.
+I also put the crime rate on the map in order to see the spatial distribution by community areas.
 
 ![Crime_Map](results/crime_map.png "Crime Map")
 
@@ -150,11 +150,11 @@ The "elbow" on the left graph can be seen to be roughly at `k=3` but is not very
 
 In order to understand the cluster characteristics, I aggregate the mean values of average rent and crime rate:  
 
-|   cluster |   crime_rate |   Average Rent |
-|----------:|-------------:|---------------:|
-|         0 |         0.11 |        1437.13 |
-|         1 |         0.35 |        1076.96 |
-|         2 |         0.28 |        2166.13 |
+|   cluster |   crime_rate |   Average Rent |  color     |
+|----------:|-------------:|---------------:|:-----------|
+|         0 |         0.11 |        1437.13 |  blue      |
+|         1 |         0.35 |        1076.96 |  orange    |
+|         2 |         0.28 |        2166.13 |  green     |
 
 Clustering with `k=7` provides a more detailed picture:
 
@@ -162,15 +162,15 @@ Clustering with `k=7` provides a more detailed picture:
 
 The structure of the clusters can be inferred from the following aggregated statistics as well:
 
-|   cluster |   crime_rate |   Average Rent |
-|----------:|-------------:|---------------:|
-|         0 |         0.31 |         875.2  |
-|         1 |         0.3  |        1393.86 |
-|         2 |         0.24 |        2200.95 |
-|         3 |         0.11 |        1275.26 |
-|         4 |         0.49 |        1043.5  |
-|         5 |         0.57 |        2251.25 |
-|         6 |         0.12 |        1791.18 |
+|   cluster |   crime_rate |   Average Rent |  color     |
+|----------:|-------------:|---------------:|:-----------|
+|         3 |         0.11 |        1275.26 |  blue      |
+|         6 |         0.12 |        1791.18 |  green     |
+|         2 |         0.24 |        2200.95 |  purple    |
+|         1 |         0.3  |        1393.86 |  red       |
+|         0 |         0.31 |         875.2  |  orange    |
+|         4 |         0.49 |        1043.5  |  brown     |
+|         5 |         0.57 |        2251.25 |  lila      |
 
 ### Types of Venues  
 
@@ -220,7 +220,7 @@ Combining the crime rate with average rent for 1-BR apartment, and applying the 
 
 One can notice that lower rent neighborhoods in cluster 1 ("orange") roughly correrspond to areas where the crime rate is high, which is natural. The neighborhoods in the cluster 2 ("green") break this pattern: due to its mostly central location, the rent there is highest (above \$ 2000). I would probably recommend to focus attention on the dominant cluster 0 ("blue") with more affordable rents and safer neighborhoods.
 
-In the second more detailed division, I was able to identify 7 clusters. Here one has 3 categories of criminal index: "low" (clusters 4, 6), "medium" (clusters 3, 0, 5) and "high" (clusters 2, 1). Within each of theses categories, clusters naturally vary in average rent price.
+In the second more detailed division, I was able to identify 7 clusters. Here one has 3 categories of criminal index: "low" (clusters 3, 6), "medium" (clusters 2, 1, 0) and "high" (clusters 4, 5). Within each of theses categories, clusters naturally vary in average rent price.
 
 For each neighborhood, the list of most popular types of venues has been found, using Foursquare API. The types of venues has been sorted by frequency of occurence for each neighborhood and for each of 7 identified clusters. This results can help to choose the living area that better suits you preferences. 
 
