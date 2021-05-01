@@ -200,13 +200,13 @@ One can easily see what types of venues are most popular in the cluster's neighb
 
 Finally, I am able to rank the venues by popularity for each neighborhood (e.g., within found clusters). Sorting can be done either by individual categories, or primary_type of venues. This should assist in finding the appropriate area to live, according to your taste: 
 
-| Neighborhood    |   sub_cluster | 1st Most Common      | 2nd Most Common   | 3rd Most Common       | 4th Most Common       | 5th Most Common       | 6th Most Common             |
-|:----------------|--------------:|:---------------------|:------------------|:----------------------|:----------------------|:----------------------|:----------------------------|
-| Belmont Central |             3 | Food                 | Shop & Service    | Outdoors & Recreation | Travel & Transport    | Arts & Entertainment  | Nightlife Spot              |
-| Belmont Gardens |             3 | Food                 | Shop & Service    | Arts & Entertainment  | Nightlife Spot        | Outdoors & Recreation | Professional & Other Places |
-| Belmont Heights |             7 | Arts & Entertainment | Food              | Nightlife Spot        | Shop & Service        | Outdoors & Recreation | Professional & Other Places |
-| Belmont Terrace |             1 | Shop & Service       | Food              | Travel & Transport    | Arts & Entertainment  | Nightlife Spot        | Outdoors & Recreation       |
-| Bucktown        |             1 | Shop & Service       | Food              | Nightlife Spot        | Outdoors & Recreation | Arts & Entertainment  | Travel & Transport          |
+| Neighborhood      | 1st Most Common    | 2nd Most Common    | 3rd Most Common    | 4th Most Common     | 5th Most Common   | 6th Most Common           |
+|:------------------|:-------------------|:-------------------|:-------------------|:--------------------|:------------------|:--------------------------|
+| Albany Park       | Pizza Place        | Korean Restaurant  | Mexican Restaurant | Hookah Bar          | Bank              | Sandwich Place            |
+| Andersonville     | Bakery             | Coffee Shop        | Italian Restaurant | Café                | Breakfast Spot    | Miscellaneous Shop        |
+| Armour Square     | Chinese Restaurant | Italian Restaurant | Grocery Store      | Coffee Shop         | Sandwich Place    | Gas Station               |
+| Avalon Park       | Burger Joint       | Boutique           | Pizza Place        | Grocery Store       | Food              | Cajun / Creole Restaurant |
+| Back of the Yards | Mexican Restaurant | Pizza Place        | Bank               | Fried Chicken Joint | Laundromat        | Deli / Bodega             |
 
 Running clustering, based on the types of venues, using "one hot encoding" is also possible, but does not lead to any meaningful results in our case.
 
